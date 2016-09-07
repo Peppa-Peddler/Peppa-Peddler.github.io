@@ -75,6 +75,13 @@ body{
 	width: 100%;
 	height: calc(50% - 10px);
 	background: #FF2E50;
+	position: relative;
+}
+
+.img > img{
+	height: 100%;
+	left: calc( 50% - 55px );
+	position: absolute;
 }
 
 .absolute{
