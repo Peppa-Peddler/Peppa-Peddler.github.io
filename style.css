@@ -10,10 +10,30 @@
 }
 
 .absolute{
+	text-align: center;
+	line-height: 0.8;
 	font-size: 120px;
 	position: absolute;
-	top: 70px;
+	top: 110px;
 	color: #FF6477;
+	color: #FF8BA1;
+	color: #FF2E50;
+	opacity: 0.6;
+	left: 50%;
+	transform: translate( -50% , 0 );
+	z-index: -1000;
+	font-family: 'Finger Paint';
+}
+
+.notehash{
+	text-align: center;
+	line-height: 0.8;
+	font-size: 60px;
+	position: absolute;
+	color: #FF6477;
+	color: #FF8BA1;
+	color: #FF2E50;
+	opacity: 0.6;
 	left: 50%;
 	transform: translate( -50% , 0 );
 	z-index: -1000;
@@ -38,7 +58,7 @@
 	line-height: 1.0;
 	font-family: 'Playfair Display SC', sans-serif;
 	margin: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	margin-top: 20px;
 }
 
