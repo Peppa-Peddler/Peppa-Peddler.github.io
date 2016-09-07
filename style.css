@@ -222,8 +222,23 @@ body{
 	margin-bottom: -70px;
 }
 
+ a.hide{
+  	display: none;
+ }
+
 @media (max-width: 600px) {
 
+  .menu a{
+  	display: none;
+  }
+
+  .menu span{
+  	display: none;
+  }
+
+  a.hide{
+  	display: block;
+  }
 
   .title {
   	font-size: 40px;
