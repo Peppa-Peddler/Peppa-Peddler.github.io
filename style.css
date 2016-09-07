@@ -10,14 +10,14 @@ body{
 .menu{
 	padding: 12px;
 	background: #FF2E50;
+	background: #FF6477;
 	font-family: 'Lato', sans-serif;
 	color: white;
 	/*font-weight: 900;*/
 	font-size: 15px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
-	border-bottom: 1px solid rgba( 0 , 0, 0, 0.1 );
 }
 
 .menu a{
