@@ -215,6 +215,8 @@ body{
 }
 
 @media (max-width: 600px) {
+
+
   .title {
   	font-size: 40px;
   	margin-top: 20px;
@@ -222,8 +224,7 @@ body{
   }
 
   .absolute{
-  	font-size: 40px;
-  	top: 70px;
+  	display: none;
   }
 
   .bajada{
