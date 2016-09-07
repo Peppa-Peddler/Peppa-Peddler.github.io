@@ -8,16 +8,24 @@ body{
 }
 
 .menu{
-	padding: 12px;
+	padding: 20px;
+	padding-left: 20px;
 	background: #FF2E50;
-	background: #FF6477;
+	/*background: #FF6477;*/
 	font-family: 'Lato', sans-serif;
 	color: white;
 	/*font-weight: 900;*/
 	font-size: 15px;
 	letter-spacing: 1px;
+	position: relative;
 	text-transform: uppercase;
-	text-align: center;
+	/*text-align: center;*/
+}
+
+.mimg{
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 55px);
 }
 
 .menu a{
