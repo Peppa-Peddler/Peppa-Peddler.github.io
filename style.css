@@ -7,6 +7,7 @@
 	font-family: 'Playfair Display SC',sans-serif;
 	font-weight: 400;
 	font-size: 22px;
+	margin-left: -5px;
 }
 
 .absolute{
@@ -69,6 +70,12 @@
 	line-height: 1.6;
 	letter-spacing: 1px;
 	font-weight: 400;
+}
+
+.desc span{
+	color: #878787;
+	font-weight: 700;
+	font-size: 9px;
 }
 
 .hr{
