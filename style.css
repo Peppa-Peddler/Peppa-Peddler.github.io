@@ -1,0 +1,77 @@
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display+SC';
+@import 'https://fonts.googleapis.com/css?family=Adamina';
+
+.container{
+	max-width: 650px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.center{
+	text-align: center
+}
+
+.title{
+	font-size: 85px;
+	letter-spacing: -3px;
+	font-weight: 400;
+	line-height: 1.0;
+	font-family: 'Playfair Display SC', sans-serif;
+	margin: 0px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.credits{
+		color: #424242;
+	font-family: Helvetica, serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.desc{
+	color: #424242;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.hr{
+	width: 100px;
+	height: 1px;
+	background: #c9c9c9;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.bajada{
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.7;
+	color: #424242;
+	font-weight: 300;
+}
+
+.text{
+	font-family: 'Adamina', serif;
+	font-size: 17px;
+	margin-top: 40px;
+	line-height: 1.9;
+}
+
+.capitalize{
+	font-family: 'Playfair Display SC', sans-serif;
+	float: left;
+	font-size: 140px;
+	margin-top: -80px;
+	margin-right: 0.2em;
+	margin-bottom: -70px;
+}
