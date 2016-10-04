@@ -53,27 +53,26 @@ body{
 }
 
 .buttom{
-	font-family: 'Lato', serif;
+	font-family: 'Open Sans', sans-serif;
 	color: white;
 	text-transform: uppercase;
 	font-size: 12px;
 	background: rgba(83,85,250,0.8);
 	font-weight: 400;
 	letter-spacing: 2px;
-	border-radius: 10px;
+	border-radius: 3px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 	/*border: 1px solid white;*/
-	padding: 10px;
+	padding: 15px;
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 15px;
 	text-decoration: none;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .buttom:hover{
-	color: rgba(83,85,250,1);
-	background: rgba(255,255,255,0.8);
+	background: rgba(83,85,250,0.95);
 }
 
 .logo{
@@ -111,19 +110,48 @@ body{
 }
 
 .section{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 #first{
-	background: #343AC4;
-	background: #FFE058;
+	/*background: #FFE058;*/
 	background: url("background.jpg") center center;
 	background-size: cover;
 	color: white;
 	padding-top: 180px;
 	padding-bottom: 120px;
 	text-align: center;
+}
+
+#third{
+	background: url("feeling.jpg") center center;
+	background-size: cover;
+	font-family: 'Lato',sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	padding-top: 90px;
+	color: white;
+	letter-spacing: 1.5px;
+	padding-bottom: 90px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#third p{
+	margin-bottom: 20px;
+}
+
+#third .buttom{
+	margin-top: 0px;
+}
+
+#fourth{
+	background: white;
+}
+
+#fourth .desc{
+	margin-bottom: 80px;
 }
 
 h1{
@@ -138,6 +166,7 @@ h1{
 
 
 h2{
+	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 50px;
 	font-family: 'Open Sans', sans-serif;
@@ -173,7 +202,66 @@ h2 span{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	line-height: 1.4;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+.profile{
+	padding-top: 25px;
+	position: relative;
+	margin-top: 20px;
+	border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.photo{
+	width: 220px;
+	height: 220px;
+	background: #e1e1e1;
+	display: inline-block;
+	/*box-shadow: 0px 5px 20px rgba(0,0,0,0.2);*/
+}
+
+.datos{
+	display: inline-block;
+	margin-left: 20px;
+	height: 220px;
+	width: calc( 100% - 260px );
+	/*border-bottom: 1px solid rgba(0,0,0,0.2);*/
+	position: relative;
+	top: 5px;
+}
+
+.datos > div{
+	position: absolute;
+}
+
+.cargo{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: #3D44E8;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.name{
+	font-family: 'Open Sans';
+	letter-spacing: -1px;
+	font-size: 35px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+#p1{
+	background: url("img/photo1.jpg");
+	background-size: cover;
+}
+
+#p2{
+	background: url("img/photo2.jpg");
+	background-size: cover;
 }
 
 #i1{
