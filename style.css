@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:700|Lato:300i,300,400,900|Merriweather:300,300i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700|Lato:300i,300,400,900|Merriweather:300,300i';
 
 body{
 	margin: 0px;
@@ -27,7 +27,7 @@ body{
 }
 
 .menu{
-	background: rgba(255,255,255,0.95);
+	background: rgba(255,255,255,0.98);
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	box-shadow: 1px 3px 3px rgba(0,0,0,0.1);
@@ -46,6 +46,10 @@ body{
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 15px;
+}
+
+.menu a:hover{
+	background: rgba(0,0,0,0.05);
 }
 
 .buttom{
@@ -67,8 +71,9 @@ body{
 	padding-right: 50px;
 }
 
-.menu a:last-child{
-	padding-right: 0px;
+.buttom:hover{
+	color: rgba(83,85,250,1);
+	background: rgba(255,255,255,0.8);
 }
 
 .logo{
@@ -125,10 +130,12 @@ h1{
 	font-family: 'Playfair Display', serif;
 	color: white;
 	font-size: 90px;
-	line-height: 1.0;
+	line-height: 1.2;
+	font-weight: 300;
 	margin: 0px;
 	margin-bottom: 0px
 }
+
 
 h2{
 	margin-bottom: 0px;
