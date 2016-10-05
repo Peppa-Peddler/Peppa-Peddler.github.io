@@ -256,11 +256,17 @@ h2 span{
 	font-size: 35px;
 	font-weight: 300;
 	margin-top: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
+	line-height: 1.1;
 }
 
 #t1{
 	background: url("img/back11.png");
+	background-size: cover;
+}
+
+#t2{
+	background: url("img/back21.png");
 	background-size: cover;
 }
 
