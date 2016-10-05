@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700|Lato:300i,300,400,900|Merriweather:300,300i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700|Lato:300i,300,400,700,900|Merriweather:300,300i';
 
 body{
 	margin: 0px;
@@ -138,6 +138,10 @@ body{
 	text-transform: uppercase;
 }
 
+#portafolio{
+	background: #F4F4EF;
+}
+
 #third p{
 	margin-bottom: 20px;
 }
@@ -190,9 +194,10 @@ h2 span{
 }
 
 .text{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
-	font-size: 14px;
+	font-size: 16px;
+	letter-spacing: -0.5px;
 }
 
 .desc{
@@ -252,6 +257,11 @@ h2 span{
 	font-weight: 300;
 	margin-top: 10px;
 	margin-bottom: 0px;
+}
+
+#t1{
+	background: url("img/back11.png");
+	background-size: cover;
 }
 
 #p1{

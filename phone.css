@@ -1,0 +1,109 @@
+.phone{
+	width: 280px;
+	height: 500px;
+	background: white;
+	border-radius: 20px;
+	padding-top: 50px;
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+}
+
+.phone > div{
+	position: absolute;
+	width: 100%;
+}
+
+.screen{
+	width: 240px;
+	height: 380px;
+	/*border-top: 2px solid #F4F4EF;*/
+	/*border-bottom: 2px solid #F4F4EF;*/
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.app{
+	margin-top: 20px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 20px;
+}
+
+.appdesc > div{
+	position: absolute;
+	bottom: 150px;
+}
+
+.phoneheader{
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Lato',sans-serif;
+	font-weight: 700;
+}
+
+.apptitle{
+	text-align: center;
+	font-size: 45px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Open Sans',sans-serif;
+	letter-spacing: -3px;
+	font-weight: 700;
+	color: #F73E30;
+	line-height: 1.0;
+}
+
+.applogo{
+	width: 50px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 25px;
+}
+
+.appbuttom{
+	position: absolute;
+	bottom: 10px;
+	background: white;
+	text-align: center;
+	width: 180px;
+	left: 30px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+	background: rgba(247,62,48,0.9);
+	color: white;
+	font-size: 11px;
+	border-radius: 5px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	box-shadow: 0px -2px 10px rgba(0,0,0,0.2);
+}
+
+.phonehr{
+	width: 40px;
+	height: 1px;
+	background: rgba(0,0,0,0.2);
+}
+
+.appdesc{
+	display: inline-block;
+	width: 240px;
+	height: 450px;
+	bottom: 0px;
+	left: 0px;
+	text-align: right;
+	position: relative;
+}
+
+.appsubti{
+	margin: 0px;
+	margin-top: 0px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 900;
+}
