@@ -1,0 +1,25 @@
+footer {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+.footer-call {
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.footer-call_img {
+    width: 130px;
+    position: relative;
+    top:3px;
+}
+
+@media (max-width: 770px){
+	.small-center{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+}
