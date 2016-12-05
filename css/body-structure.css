@@ -263,17 +263,6 @@ Segundo card
     margin-bottom: 80px;
 }
 
-.title_small {
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    text-align: center;
-    color: #929292;
-}
-
 
 .como-funciona{
 	
@@ -339,9 +328,8 @@ Segundo card
 
 .panel-terms {
     background-color: #e6e6e6;
-    padding: 10px;
-    font-family: 'Maven Pro';
-    font-size: 11px;
+    padding: 16px 10px; 
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -351,7 +339,7 @@ Segundo card
 
 .title_small {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
