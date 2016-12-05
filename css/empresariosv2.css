@@ -5,6 +5,11 @@
 	z-index: 100;
 }
 
+#right-flotante div.content-standar{
+	padding: 20px !important;
+	padding-top: 10px;
+}
+
 .div-relative{
 	position: relative;
 }
@@ -25,15 +30,16 @@
 
 .flotante-warning{
 	background: #D6F7F5;
-	padding: 20px;
+	padding: 10px;
+	font-size: 13px;
 	border-radius: 5px;
 }
 
 .tablet-gap{
 	position: relative;
-	top: -250px;
+	top: -220px;
 	padding-right: 30px;
-	margin-bottom: -250px;
+	margin-bottom: -220px;
 }
 
 @media screen and (max-width: 992px) {

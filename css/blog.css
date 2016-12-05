@@ -1,6 +1,6 @@
 .b-pestanas{
 	padding: 7px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .pestana{
@@ -10,7 +10,7 @@
 	color: #59bcb3;
 	font-size: 16px;
 	background: rgba(0,0,0,0.04);
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	cursor: pointer;
 	font-weight: 300;
 }
@@ -21,6 +21,10 @@
 	cursor: auto;
 }
 
+.entry-cover{
+	margin-top: 50px;
+}
+
 .last-new{
 	padding: 0px;
 	margin-bottom: 50px;
@@ -28,7 +32,7 @@
 
 .last-new-img{
 	/*border: 1px solid black;*/
-	height: 550px;
+	height: 450px;
 	background: url("../images/4.jpg") center center;
 	background-size: cover;
 	margin: 0px;
@@ -55,13 +59,13 @@
 
 .last-title h2{
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 30px;
 	margin: 0px;
 }
 
 .last-date{
 	margin-bottom: 5px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .last-desc{
@@ -71,9 +75,13 @@
 }
 
 p.p-desc-text{
-	font-size: 16px;
+	font-size: 15px;
 	color: #828282;
 	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+.last-new p.p-desc-text{
 	margin-bottom: 30px;
 }
 
@@ -104,7 +112,7 @@ p.p-desc-text{
 
 .new{
 	background: white;
-	height: 240px;
+	height: 200px;
 	display: block;
 	margin-bottom: 30px;
 	border: solid 1px #dadada;
@@ -123,11 +131,14 @@ h2.new-h2{
 	letter-spacing: -1px;
 	margin: 0px;
 	margin-bottom: 10px;
+	font-size: 20px;
 	color: #323232;
 }
 
 p.date{
 	color: #59bcb3;
+	font-size: 14px;
+	margin-top: 0px;
 }
 
 .new-img{

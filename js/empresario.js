@@ -24,14 +24,14 @@ $(document).ready(function(){
 		var lowerbound = $cache.offset().top;
 		var upperbound = $("#upperbound").offset().top;
 
-		if (scroll <= (+lowerbound) + 120 ){
+		if (scroll <= (+lowerbound) + 80 ){
 			$("#right-fixed")
 				.css("position","static")
 				.css("top","auto");
 
 			$("#right-flotante")
 				.css("bottom","auto")
-				.css("top","220px");
+				.css("top","180px");
 		}
 		else if( scroll > (+lowerbound) && scroll + right_height + 120 < +upperbound){
 			$("#right-fixed")
