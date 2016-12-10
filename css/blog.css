@@ -57,9 +57,21 @@
 	margin-bottom: 30px;
 }
 
+.btn-vermas{
+	width: 250px;
+	margin: 0 auto;
+	font-weight: 400;
+	color: #59bcb3;
+	display: block;
+	text-transform: uppercase;
+	font-size: 11px;
+	border: 1px solid #59bcb3;
+	text-align: center;
+}
+
 .last-title h2{
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 35px;
 	margin: 0px;
 }
 
@@ -75,7 +87,7 @@
 }
 
 p.p-desc-text{
-	font-size: 15px;
+	font-size: 16px;
 	color: #828282;
 	font-weight: 300;
 	margin-bottom: 0px;
@@ -131,7 +143,7 @@ h2.new-h2{
 	letter-spacing: -1px;
 	margin: 0px;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 25px;
 	color: #323232;
 }
 

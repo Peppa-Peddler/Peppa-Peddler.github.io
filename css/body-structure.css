@@ -15,7 +15,7 @@ Definir ancho del container
 
 @media (min-width: 1201px) {
     .container{
-        max-width: 900px;
+        max-width: 1008px;
     }
 
     .blocky{
@@ -60,11 +60,14 @@ Primer card
 
 .card-action_head {
     text-transform: uppercase;
-    font-family: 'Hind Madurai';
+    font-family: 'Montserrat';
     font-size: 10px;
     font-weight: bold;
     font-stretch: normal;
     line-height: 1.2;
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: 1px;
 }
 
 .text-prestamo {
@@ -165,12 +168,13 @@ Segundo card
 
 .card-info_img {
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: white;
     text-align: center;
-    padding: 20%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -188,12 +192,12 @@ Segundo card
 }
 
 .card-info_title {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-weight: bold;
+    /*font-family: 'Montserrat';*/
+    font-size: 34px;
+    font-weight: 600;
     font-style: normal;
     line-height: 1;
-    letter-spacing: -0.4px;
+    letter-spacing: 0px;
 }
 
 .card-info {
@@ -201,14 +205,6 @@ Segundo card
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-@media (min-width: 992px){
-	.card-info_img {
-	    padding: 10%;
-	}
-}
-
-
 
 
 
@@ -224,7 +220,7 @@ Segundo card
     color: #ffffff;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px 10px;
+    padding: 20px 20px;
     font-family: 'Hind Madurai';
 }
 
@@ -233,21 +229,27 @@ Segundo card
 }
 
 .card-brand_title {
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
-    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.4px;
 }
 
 .card-brand_icon+p {
     width: 90%;
     display: inline-table;
+    margin-bottom: 20px;
 }
 
 .card-brand_text-box {
     min-height: 140px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .bg-primary {
@@ -273,6 +275,15 @@ Segundo card
 
 @media (max-width: 770px){
     
+    .card-info_title {
+        font-size: 28px;
+    }
+
+    .card-info_img{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     .como-funciona{
         
         margin-bottom: 10px;
@@ -331,20 +342,27 @@ Segundo card
     padding: 16px 10px; 
     font-size: 13px;
     font-weight: normal;
+    text-align: center;
     font-style: normal;
     font-stretch: normal;
     color: #929292;
     margin-top: 20px;
     padding-bottom: 10px;}
 
+.panel-terms .title_small{
+    margin-bottom: 5px;
+}
+
 .title_small {
     text-transform: uppercase;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.2;
     text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
     color: #929292;
 }
 
@@ -393,6 +411,7 @@ Segundo card
 
     .config-bg{
         min-height: 200px!important;
+        margin-bottom: 0px;
     }
 
 }
@@ -417,6 +436,11 @@ Segundo card
 
 .content-bg{
     background-color: #fff;
+}
+
+.content-bg p{
+    font-size: 14px !important;
+    margin-bottom: 7px !important;
 }
 
 .content-standar{
@@ -648,7 +672,7 @@ Segundo card
 }
 
 .new-list{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .grey-info{
@@ -673,7 +697,7 @@ Segundo card
 
 .download-container{
     position: absolute;
-    bottom: 80px;
+    top: 40px;
     left: 50px;
     background-color: #fff;
     max-width: 240px;
@@ -926,7 +950,8 @@ Segundo card
 /*********formulario**********/
 .cont-botones{
     width: 100%;
-    height: 100px;
+    height: 70px;
+    margin-bottom: 10px;
 }
 
 .cont-monedas{
@@ -945,12 +970,12 @@ Segundo card
     background-color: #fff;
     color: #bcd36c;
     font-size: 16px;
-    min-height: 80px;
+    min-height: 60px;
     float: left;
     text-align: center;
     border-radius: 6px;
     border: 1px solid #bcd36c;
-    padding-top: 12px;
+    padding-top: 5px;
     cursor: pointer;
 }
 
@@ -965,6 +990,9 @@ Segundo card
 
 span.cont-botones-titulo{
     display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .exclamation-form{
@@ -1108,12 +1136,18 @@ div.salto-2{
 
 }
 
-
+.card-action_extra_parrafo{
+    font-size: 17px;
+    color: #929292 !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: 1.2;
+}
 
 @media (min-width: 1201px){
     
     .card-action_extra_titulo{
-        font-size: 36px!important;
+        font-size: 41.4px!important;
     }
 
     .card-action_extra_parrafo{
@@ -1134,14 +1168,19 @@ div.salto-2{
     }
 
 .crecimiento-c{
-    font-weight: 300!important;
-    letter-spacing: 0.6px;
+    font-weight: 400!important;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
     font-size: 11px!important;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
 }
 
 .new-card-info_text {
-    padding: 10px 20px;
+    padding: 20px 20px;
+    font-size: 17px;
+    color: #828282;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 

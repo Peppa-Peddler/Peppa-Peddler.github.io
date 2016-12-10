@@ -33,7 +33,7 @@ $(document).ready(function(){
 				.css("bottom","auto")
 				.css("top","180px");
 		}
-		else if( scroll > (+lowerbound) && scroll + right_height + 120 < +upperbound){
+		else if( scroll > (+lowerbound) && scroll + right_height + 200 < +upperbound){
 			$("#right-fixed")
 				.css("position","fixed")
 				.css("top","100px");
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 			$("#right-flotante")
 				.css("top","auto")
-				.css("bottom","0px");
+				.css("bottom","82px");
 		}
 	};
 });
