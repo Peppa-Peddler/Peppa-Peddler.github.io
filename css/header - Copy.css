@@ -17,9 +17,8 @@ header.index {
 header {
     background-color: #ffffff;
     border-bottom: solid 1px #dadada;
-    font-size: 15px!important;
-}
 
+}
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -74,8 +73,6 @@ header {
     }
 
 }
-
-
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #333;
     background-color: transparent;
@@ -154,13 +151,6 @@ header {
 	}
 
 
-}
-
-
-@media (min-width: 1201px){
-    .navbar-default .navbar-nav>li>a {
-        margin-right: 15px;
-    }
 }
 
 
