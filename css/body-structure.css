@@ -50,7 +50,7 @@ Primer card
 
 .card-action {
     background-color: #ffffff;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
@@ -173,8 +173,8 @@ Segundo card
     text-align: center;
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -202,7 +202,7 @@ Segundo card
 
 .card-info {
     background-color: #ffffff;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -1176,11 +1176,12 @@ div.salto-2{
 }
 
 .new-card-info_text {
-    padding: 20px 20px;
+    padding: 5px 20px;
+    padding-bottom: 15px;
     font-size: 17px;
     color: #828282;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 
