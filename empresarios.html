@@ -19,7 +19,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/empresariosv2.css">
-
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 
 <!--
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -58,6 +58,7 @@
 	</nav>
 </header>
 
+<div id="form0">
 <div class="div-relative container" id="fullpage">
 <div id="right-flotante">
 	<div id="right-fixed">
@@ -158,7 +159,7 @@
 				</div>
 
 
-				<a href="formulario.html" class="btn btn-prestamo btn-block btn-prestamo-form-absolute">
+				<a class="btn-next btn btn-prestamo btn-block btn-prestamo-form-absolute" id="btn-next-10">
 					Continuar
 				</a>
 
@@ -194,9 +195,6 @@
 	  	</div> 
 	</div>
 </div>
-
-
-
 
 	<div class="jumbotron config-bg empresarios-bg hidden-sm hidden-md hidden-lg" style="margin-top:20px;">
 		<div class="container">
@@ -332,7 +330,7 @@
 				</div>
 
 
-				<a href="formulario.html" class="btn btn-prestamo btn-block btn-prestamo-form-absolute">
+				<a class="btn-next btn btn-prestamo btn-block btn-prestamo-form-absolute" id="btn-next-20">
 					Continuar
 				</a>
 
@@ -467,7 +465,7 @@
 				</div>
 
 
-				<a href="formulario.html" class="btn btn-prestamo btn-block btn-prestamo-form-absolute">
+				<a class="btn-next btn btn-prestamo btn-block btn-prestamo-form-absolute" id="btn-next-30">
 					Continuar
 				</a>
 
@@ -893,9 +891,177 @@
 		</div>
 	</div>
 </footer>
+</div>
 
+<div class="form" id="form1">
+	<div class="container container-small form-page">
+		<div class="row form-box form-box_bb">
+			<div class="col-md-6">
+				<p><b>llfelflel.</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="radio input-box">
+  					<p><label><input type="radio" name="optradio">Soy el único dueño de la propiedad</label></p>
+  					<p><label><input type="radio" name="optradio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</label></p>
+  					<p><label><input type="radio" name="optradio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </label></p>
+  					<p><label><input type="radio" name="optradio">Somos varios dueños de la propiedad</label></p>
+  					<p><label><input type="radio" name="optradio">seños de la propiedad</label></p>
+				</div>
+			</div>
+		</div>
 
+		<div class="row form-box form-box_bb">
+			<div class="col-md-6">
+				<p><b>Lorem ipsum dolor sit amet</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<select class="form-control" id="sel1">
+						<option>Ancón</option>
+						<option>Miraflores</option>
+						<option>Surquillo</option>
+						<option>Callao</option>
+					</select>
+				</div>
+			</div>
+		</div>
 
+		<div class="row form-box form-box_bb">
+			<div class="col-md-6">
+				<p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="radio input-box">
+					<div class="row">
+						<div class="col-sm-6">
+  							<p><label><input type="radio" name="optradio">Departamento</label></p>
+  							<p><label><input type="radio" name="optradio">Local Comercial</label></p>
+  							<p><label><input type="radio" name="optradio">Terreno</label></p>
+  						</div>
+  						<div class="col-sm-6">
+  							<p><label><input type="radio" name="optradio">Casa</label></p>
+  							<p><label><input type="radio" name="optradio">Edificio</label></p>
+  							<p><label><input type="radio" name="optradio">Otro caso</label></p>
+  						</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row form-box">
+			<div class="col-md-6">
+				<p><b>Lorem ipsum dolor sit</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="input-group">
+					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+					<span class="input-group-addon">m<sup>2</sup></span>
+				</div>
+			</div>
+		</div>
+		<div class="row form-box">
+			<div class="col-md-6">
+			</div>
+			<div class="col-md-6">
+				<a class="btn-next btn btn-prestamo btn-block" id="btn-next-1">Continuar</a>
+			</div>
+		</div>
+	</div>
+	<a href="empresarios.html" class="volver">Volver</a>
+</div>
+
+<div class="form" id="form2">
+	<div class="container container-small form-page">
+
+		<h2>
+			Tus datos
+		</h2>
+
+		<div class="row form-box">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Tus nombres</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo: Franco Antonio">
+					<small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie más</small>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Tus apellidos</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Antonio Romani">
+				</div>
+			</div>
+		</div>
+
+		<div class="row form-box">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">DNI</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="8 dígitos: xxxx-yyyy">
+					<small id="emailHelp" class="form-text text-muted">Por qué?</small>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Teléfono</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo: 962914840">
+					<small id="emailHelp" class="form-text text-muted">Por qué?</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="row form-box">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Estado civil</label>
+					<select class="form-control" id="sel1">
+						<option>Soltero</option>
+						<option>Miraflores</option>
+						<option>Surquillo</option>
+						<option>Callao</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Motivo para solicitar préstamo</label>
+					<select class="form-control" id="sel1">
+						<option>Pérdida de casa</option>
+						<option>Miraflores</option>
+						<option>Surquillo</option>
+						<option>Callao</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row form-box">
+			<div class="col-md-6">
+			</div>
+			<div class="col-md-6">
+				<a class="btn-next btn btn-prestamo btn-block" id="btn-next-2">Continuar</a>
+			</div>
+		</div>
+	</div>
+
+	<a href="formulario.html" class="volver">Volver</a>
+</div>
+
+<div class="form" id="form3">
+	<div class="container container-small form-page form-page-final">
+		<h2>
+			Tus datos se enviaron corréctamente
+		</h2>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		</p>
+
+		<a href="empresarios.html" class="volver">Volver a la página principal</a>
+
+	</div>
+</div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -903,6 +1069,7 @@
 <script type="text/javascript" src="js/smooth.js"></script>
 <script type="text/javascript" src="js/empresario.js"></script>
 <script type="text/javascript" src="js/boton.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() {
