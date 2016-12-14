@@ -21,6 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="css/empresariosv2.css">
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 
+	<link rel="stylesheet" type="text/css" href="css/bullet.css">
+
 <!--
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
@@ -893,8 +895,114 @@
 </footer>
 </div>
 
-<div class="form" id="form1">
+<div class="hidden">
+
+	<form id="form_empresarios">
+		<input type="ratio" name="CARRO">
+		<input type="ratio" name="MUEBLE">
+	</form>
+
+	<form id="form_empresarios">
+		<input type="ratio" name="USD">
+		<input type="ratio" name="PEN">
+	</form>
+
+	<form id="form_empresarios">
+		<input type="ratio" name="mes0.5">
+		<input type="ratio" name="mes1.0">
+		<input type="ratio" name="mes1.5">
+		<input type="ratio" name="mes2.0">
+	</form>
+
+</div>
+
+<div class="form carro-form" id="form-1">
+	<div class="bullet">
+		<div class="ugly-line"></div>
+		<div class="visi-line visi-033"></div>
+		<div class="point point-visited"><p>datos<br>generales</p></div>
+		<div class="point point-now"><p>Información<br>del préstamo</p></div>
+		<div class="point"><p>Tus datos</p></div>
+		<div class="point"><p>Confirmación</p></div>
+	</div>
 	<div class="container container-small form-page">
+		<form id="form_empresarios">
+		<div class="row form-box form-box_bb">
+			<div class="col-md-6">
+				<p><b>Año de fabricación del vehículo:</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="radio input-box">
+					<div class="row">
+						<div class="col-md-6">
+  							<p><label><input type="radio" name="optradio">2012</label></p>
+  							<p><label><input type="radio" name="optradio">2013</label></p>
+  							<p><label><input type="radio" name="optradio">2014</label></p>
+  						</div>
+  						<div class="col-md-6">
+  							<p><label><input type="radio" name="optradio">2015</label></p>
+  							<p><label><input type="radio" name="optradio">2016</label></p>
+  							<p><label><input type="radio" name="optradio">2017</label></p>
+  						</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+		<form id="form_empresarios">
+		<div class="row form-box form-box_bb">
+			<div class="col-md-6">
+				<p><b>Tipo de vehículo:</b></p>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<select class="form-control" id="sel1">
+						<option>SUV</option>
+						<option>4x4</option>
+						<option>Sedan</option>
+						<option>Camioneta</option>
+						<option>Camión</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		</form>
+		<form id="form_empresarios">
+		<div class="row form-box">
+			<div class="col-md-6">
+				<p><b>Marca del vehículo:</b></p>
+			</div>
+			<div class="col-md-6">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo: Franco Antonio">
+			</div>
+		</div>
+		</form>
+		<div class="row form-box">
+			<div class="col-md-6">
+			</div>
+			<div class="col-md-6">
+				<a class="btn-next btn btn-prestamo btn-block" id="btn-next-1">Continuar</a>
+			</div>
+		</div>
+	</div>
+	<a class="volver" id="volver0">Volver</a>
+</div>
+
+<div class="form casa-form" id="form1">
+
+	<div class="bullet">
+
+		<div class="ugly-line"></div>
+		<div class="visi-line visi-033"></div>
+
+		<div class="point point-visited"><p>datos<br>generales</p></div>
+		<div class="point point-now"><p>Información<br>del préstamo</p></div>
+		<div class="point"><p>Tus datos</p></div>
+		<div class="point"><p>Confirmación</p></div>
+	</div>
+
+	<div class="container container-small form-page">
+		<form id="form_empresarios">
 		<div class="row form-box form-box_bb">
 			<div class="col-md-6">
 				<p><b>Según la SUNARP, ¿a quién le pertenece la propiedad que servirá de garantía?</b></p>
@@ -909,7 +1017,8 @@
 				</div>
 			</div>
 		</div>
-
+		</form>
+		<form id="form_empresarios">
 		<div class="row form-box form-box_bb">
 			<div class="col-md-6">
 				<p><b>La propiedad se ubica</b></p>
@@ -925,7 +1034,8 @@
 				</div>
 			</div>
 		</div>
-
+		</form>
+		<form id="form_empresarios">
 		<div class="row form-box form-box_bb">
 			<div class="col-md-6">
 				<p><b>Tipo de propiedad</b></p>
@@ -947,6 +1057,8 @@
 				</div>
 			</div>
 		</div>
+		</form>
+		<form id="form_empresarios">
 		<div class="row form-box">
 			<div class="col-md-6">
 				<p><b>Superficie aproximada</b></p>
@@ -958,6 +1070,7 @@
 				</div>
 			</div>
 		</div>
+		</form>
 		<div class="row form-box">
 			<div class="col-md-6">
 			</div>
@@ -970,47 +1083,65 @@
 </div>
 
 <div class="form" id="form2">
-	<div class="container container-small form-page">
+	<div class="bullet">
 
+		<div class="ugly-line"></div>
+		<div class="visi-line visi-066"></div>
+
+		<div class="point point-visited"><p>datos<br>generales</p></div>
+		<div class="point point-visited"><p>Información<br>del préstamo</p></div>
+		<div class="point point-now"><p>Tus datos</p></div>
+		<div class="point"><p>Confirmación</p></div>
+	</div>
+	<div class="container container-small form-page">
 		<h2>
 			Tus datos
 		</h2>
 
 		<div class="row form-box">
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tus nombres</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo: Franco Antonio">
 					<small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie más</small>
 				</div>
+				</form>
 			</div>
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tus apellidos</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Antonio Romani">
 				</div>
+				</form>
 			</div>
 		</div>
 
 		<div class="row form-box">
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">DNI</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="8 dígitos: xxxx-yyyy">
 					<small id="emailHelp" class="form-text text-muted">Por qué?</small>
 				</div>
+				</form>
 			</div>
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Teléfono</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo: 962914840">
 					<small id="emailHelp" class="form-text text-muted">Por qué?</small>
 				</div>
+				</form>
 			</div>
 		</div>
 
 		<div class="row form-box">
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Estado civil</label>
 					<select class="form-control" id="sel1">
@@ -1020,8 +1151,10 @@
 						<option>Callao</option>
 					</select>
 				</div>
+				</form>
 			</div>
 			<div class="col-md-6">
+				<form id="form_empresarios">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Motivo para solicitar préstamo</label>
 					<select class="form-control" id="sel1">
@@ -1031,15 +1164,18 @@
 						<option>Callao</option>
 					</select>
 				</div>
+				</form>
 			</div>
 		</div>
+<form id='form_empresarios' action="formulario3.html">
 		<div class="row form-box">
 			<div class="col-md-6">
 			</div>
 			<div class="col-md-6">
-				<a href="formulario3.html" class="btn btn-prestamo btn-block">Continuar</a>
+				<input type="submit" action="formulario3.html" form="form_empresarios" value="Continuar" class="btn btn-prestamo btn-block">
 			</div>
 		</div>
+</form>
 	</div>
 
 	<a class="volver" id="volver1">Volver</a>

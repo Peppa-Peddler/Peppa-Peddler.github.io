@@ -1,6 +1,7 @@
 $("#form0").show();
 $("#form1").hide();
 $("#form2").hide();
+$("#form-1").hide();
 $("#form3").hide();
 
 $(".btn-next").click(function(){
