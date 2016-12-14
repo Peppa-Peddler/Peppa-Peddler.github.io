@@ -37,6 +37,7 @@
 .form-page-final a.volver{
 	margin-top: 0px;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 .form-page h2{
@@ -55,6 +56,7 @@ a.volver{
 	margin-top: 50px;
 	margin-bottom: 70px;
 	text-decoration: underline !important;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
