@@ -671,6 +671,12 @@ Segundo card
     background-blend-mode: multiply;
 }
 
+.empresarios-bg-new{
+    background-image: url(../images/empresario.jpg);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
 .new-list{
     margin-bottom: 0px;
 }
@@ -905,11 +911,6 @@ Segundo card
 
 /************INVERSIONISTAS***************/
 
-.empresarios-bg{
-    background-image: url(../images/1.jpg);
-    background-color: rgba(0,0,0,0.3);
-    background-blend-mode: multiply;
-}
 
 .inversores-bg{
     background-image: url(../images/2.jpg);
@@ -917,6 +918,11 @@ Segundo card
     background-blend-mode: multiply;
 }
 
+.inversores-bg-new{
+    background-image: url(../images/inversionista.jpg);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
 
 /***************Modal*****************/
 
