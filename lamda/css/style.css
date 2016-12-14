@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+
+body{
+	font-family: 'Source Code Pro', sans-serif;
+	/*background: #F5F5F5;*/
+}
+
+.b-nm{
+	padding: 0px;
+}
+
+.menu{
+	margin: 10px 0px;
+	text-align: center;
+}
+
+.contacto{
+	border: 2px solid black;
+}
+
+.contacto:hover{
+	border: 2px solid #19B578;
+}
+
+.menu a{
+	padding: 10px 30px;
+	display: inline-block;
+	color: black;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.menu a:hover{
+	color: #19B578;
+	text-decoration: none;
+}
+
+nav{
+	text-align: center;
+	background: black;
+	padding: 10px;
+	color: white;
+	font-size: 12px;
+	font-weight: 200;
+	letter-spacing: 10px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0px 5px 3px rgba(0,0,0,0.2);
+}
+
+.title{
+	font-size: 30px;
+	line-height: 1.3;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.hr{
+	width: 40px;
+	height: 1px;
+	background: white;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.who{
+	margin: 0px;
+	margin-top: 50px;
+}
+
+.whoimg{
+	background: url("../img/who.jpg") center center;
+	background-size: cover;
+	height: 300px;
+}
+
+.cover{
+	margin-top: 30px;
+	background: url("../img/cover.jpg") center center fixed;
+	background-size: cover;
+	/*background: #c1c1c1;*/
+	padding: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.cover .container{
+	max-width: 700px;
+}
+
+.hcr{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 50px;
+	height: 1px;
+	background: #23FFA9;
+}
+
+.cover h1{
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 1.2;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	color: white;
+}
+
+.cover-desc{
+	max-width: 300px;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 1.6;
+	letter-spacing: 5px;
+	font-family: 'Source Code Pro', sans-serif;
+	text-transform: uppercase;
+	color: #23FFA9;
+	margin-bottom: 20px;
+}
+
+.cover-desc span{
+	/*background: black;*/
+}
+
+.desc{
+	line-height: 1.7;
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+.info-box{
+	padding: 40px 40px;
+	min-height: 250px;
+}
+
+.info-blue{
+	background: #076CF2;
+}
+
+.info-green{
+	background: #19B578;
+}
+
+.info-yellow{
+	background: #E8453B;
+}
+
+.info-img{
+	padding: 60px;
+	margin: 0px;
+	background: url("../img/phone.jpg") center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.info-img2{
+	padding: 60px;
+	margin: 0px;
+	background: url("../img/ai1.jpg") center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.info-img3{
+	padding: 60px;
+	margin: 0px;
+	background: url("../img/sof1.jpg") center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.b-box{
+	box-shadow: 0px 20px 20px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+}
+
+.relative{
+	position: relative;
+}
+
+@media (max-width: 700px) {
+    .cover h1{
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 1.2;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		color: white;
+	}
+
+	.who{
+		margin-top: 0px;
+	}
+
+	.b-box{
+		margin-bottom:0px;
+	}
+
+}
