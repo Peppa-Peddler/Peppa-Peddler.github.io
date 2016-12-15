@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300:400,600,700|Maven+Pro|Montserrat:400,700');
 
 
-
-
 <<<<<<< HEAD
 * {
     box-sizing: border-box;
@@ -162,4 +160,23 @@ body{
 	color: #bcd36c;
     background-color: transparent;
     border-color: #97b336;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.social-footer{
+    text-align: right;
+}
+
+.social-footer img{
+    margin-right: 15px;
+    margin-top: 5px;
 }
