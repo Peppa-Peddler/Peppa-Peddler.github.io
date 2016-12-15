@@ -51,7 +51,7 @@ Primer card
 .card-action {
     background-color: #ffffff;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     overflow: hidden;
     position: relative;
 }
@@ -1113,6 +1113,15 @@ div.salto-2{
 }
 
 
+.card-action_extra_parrafo{
+    font-size: 17px;
+    color: #929292 !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+
+
 @media (max-width: 769px){
     div.salto{
         display: block
@@ -1120,6 +1129,16 @@ div.salto-2{
 
     div.salto-2{
         display: block
+    }
+
+    .card-action_extra_titulo{
+        font-size: 30px!important;
+    }
+
+    .card-action_extra_parrafo{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     }
 
 }
@@ -1142,13 +1161,6 @@ div.salto-2{
 
 }
 
-.card-action_extra_parrafo{
-    font-size: 17px;
-    color: #929292 !important;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    line-height: 1.2;
-}
 
 @media (min-width: 1201px){
     
