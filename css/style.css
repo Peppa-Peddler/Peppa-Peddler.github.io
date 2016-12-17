@@ -178,5 +178,11 @@ body{
 
 .social-footer img{
     margin-right: 15px;
-    margin-top: 5px;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .social-footer img{
+        margin-right: 15px;
+    }
 }
