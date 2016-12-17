@@ -355,7 +355,7 @@ Segundo card
 
 .title_small {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -1121,6 +1121,14 @@ div.salto-2{
     line-height: 1.2;
 }
 
+.new-card-info_text {
+    padding: 5px 20px;
+    padding-bottom: 15px;
+    font-size: 17px;
+    color: #828282;
+    font-weight: 300;
+    line-height: 1.5;
+}
 
 @media (max-width: 769px){
     div.salto{
@@ -1141,6 +1149,9 @@ div.salto-2{
     margin-top: 10px;
     }
 
+    .new-card-info_text {
+       padding-top: 16px;
+   }
 }
 
 .filter-black{
@@ -1192,16 +1203,6 @@ div.salto-2{
     font-size: 11px!important;
     margin-bottom: 15px;
 }
-
-.new-card-info_text {
-    padding: 5px 20px;
-    padding-bottom: 15px;
-    font-size: 17px;
-    color: #828282;
-    font-weight: 300;
-    line-height: 1.5;
-}
-
 
 .btn-block-new{
     width: 90%!important;
