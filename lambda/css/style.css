@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 
 body{
 	font-family: 'Ubuntu', sans-serif;
@@ -16,19 +16,20 @@ body{
 }
 
 .contact{
-	border: 2px solid rgba(255,255,255,0.7);
 	border-radius: 15px;
 	color: white !important;
+	background: #424242;
 	padding: 12px 60px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 10px;
 	transition: background-color 0.5s ease;
+	box-shadow: 0px 10px 35px rgba(0,0,0,0.2);
 }
 
-.b-contact{
-	border: 2px solid #19B578;
-	color: #19B578 !important;
+.contact:hover{
+	background: #121212;
+	text-decoration: none;
 }
 
 .otherbox{
@@ -49,22 +50,15 @@ body{
 	text-align: center;
 }
 
-.contact:hover{
-	border: 2px solid #19B578;
-	background: #424242;
-	color: white !important;
-	text-decoration: none;
-}
-
 .contacto{
-	border: 2px solid #19B578;
+	border: 2px solid #00BEBE;
 	border-radius: 10px;
-	color: #19B578 !important;
+	color: #00BEBE !important;
 	transition: background-color 0.5s ease;
 }
 
 .contacto:hover{
-	background: #19B578;
+	background: #00BEBE;
 	color: white !important;
 }
 
@@ -99,7 +93,7 @@ nav{
 	top: 0;
 	z-index: 10;
 	/*border-bottom: 2px solid #424242;*/
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 
 .hr{
@@ -113,7 +107,7 @@ nav{
 .who{
 	margin: 0px;
 	margin-top: 50px;
-	margin-bottom: 70px;
+	margin-bottom: 90px;
 }
 
 .what{
@@ -123,15 +117,24 @@ nav{
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+.filter{
+	background: rgba(0,190,190,0.8);
+	padding: 150px 20px;
+}
+
 .cover{
 	margin-top: 37px;
 	margin-bottom: 30px;
 	background: url("../img/cover.jpg") center center;
+	/*background: #31BD7E;*/
 	background-size: cover;
-	padding: 50px;
-	padding-top: 185px;
-	padding-bottom: 185px;
+	padding: 0px;
 	text-align: center;
+}
+
+.cover .filter{
+	padding: 190px 20px;
+	background: rgba(0,190,190,0.7);
 }
 
 .hcr{
@@ -150,7 +153,7 @@ nav{
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	color: white;
 }
 
@@ -162,10 +165,10 @@ nav{
 	font-weight: 200;
 	font-size: 13px;
 	line-height: 1.5;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	font-family: 'Ubuntu', sans-serif;
 	color: white;
-	/*opacity: 0.9;*/
+	opacity: 0.8;
 	margin-bottom: 25px;
 }
 
@@ -181,7 +184,7 @@ nav{
 
 .title span{
 	font-weight: 400;
-	color: #1CCF89;
+	color: #00BEBE;
 }
 
 .desc{
@@ -207,12 +210,33 @@ nav{
 	border-radius: 5px;
 }
 
+.phrase{
+	background: url("../img/young.jpg") center center;
+	background-size: cover;
+}
+
+.phrase h2{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	/*text-transform: uppercase;*/
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.3;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.phrase .cover-desc{
+	margin-bottom: 35px;
+}
+
 .b-box{
 	margin-bottom: 10px;
 }
 
 .color-box{
 	background: #31BD7E;
+	background: #00BEBE;
 	height: 300px;
 	min-height: 300px;
 	border-radius: 10px 0px 0px 10px;
