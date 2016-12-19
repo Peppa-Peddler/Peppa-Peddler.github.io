@@ -50,16 +50,22 @@ body{
 	text-align: center;
 }
 
+a{
+	cursor: pointer;
+}
+
 .contacto{
 	border: 2px solid #00BEBE;
 	border-radius: 10px;
 	color: #00BEBE !important;
 	transition: background-color 0.5s ease;
+	padding: 10px 30px;
 }
 
 .contacto:hover{
 	background: #00BEBE;
 	color: white !important;
+	text-decoration: none;
 }
 
 .menu a{
@@ -112,9 +118,8 @@ nav{
 
 .what{
 	background: white;
-	padding-top: 70px;
-	padding-bottom: 70px;
-	border-top: 1px solid rgba(0,0,0,0.1);
+	padding: 0px;
+	margin: 0px;
 }
 
 .filter{
@@ -212,6 +217,7 @@ nav{
 .phrase{
 	background: url("../img/young.jpg") center center;
 	background-size: cover;
+	margin: 0px;
 }
 
 .phrase h2{
@@ -262,8 +268,60 @@ nav{
 }
 
 .topic{
-	height: 300px;
+	color: white;
+	font-weight: 300;
+}
+
+.topicweb{
+	background: url("../img/web1.jpg");
 	background-size: cover;
+}
+
+.topicsof{
+	background: url("../img/sof1.jpg");
+	background-size: cover;
+}
+
+.topicapp{
+	background: url("../img/who.jpg");
+	background-size: cover;
+}
+
+.team{
+	padding: 100px 30px;
+	background: #00BEBE;
+}
+
+.team .container{
+	/*max-width: 800px;*/
+}
+
+.quote{
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: 300;
+	letter-spacing: 1px;
+	/*text-transform: uppercase;*/
+	color: white;
+	padding: 30px;
+	padding-top: 50px;
+}
+
+.minititle{
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.minifilter{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	height: 300px;
+	text-align: center;
+	padding: 60px 60px;
 }
 
 small{
@@ -282,10 +340,19 @@ small{
 .width600{
 	max-width: 600px;
 	margin: 60px auto;
+	margin-top: 20px;
 	margin-bottom: 50px;
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,0.2);
 	padding-top: 40px;
+}
+
+.footer{
+	padding: 70px 0px;
+	opacity: 0.7;
+	line-height: 1.6;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 @media (max-width: 700px) {
