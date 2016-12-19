@@ -357,6 +357,10 @@ small{
 
 @media (max-width: 700px) {
 
+	.quote{
+		padding-top: 25px;
+	}
+
 	.info-box{
 		padding: 30px;
 	}
