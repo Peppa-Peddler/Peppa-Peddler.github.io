@@ -126,12 +126,12 @@ nav{
 
 .cover h1{
 	font-weight: 300;
-	font-size: 45px;
+	font-size: 40px;
 	line-height: 1.4;
 	font-family: 'Ubuntu', sans-serif;
 	/*text-transform: uppercase;*/
 	margin-bottom: 30px;
-	/*letter-spacing: 2px;*/
+	letter-spacing: 2px;
 	color: white;
 }
 
