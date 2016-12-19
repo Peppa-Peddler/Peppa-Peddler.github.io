@@ -355,7 +355,7 @@ small{
 	letter-spacing: 1px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
 	.quote{
 		padding-top: 25px;
