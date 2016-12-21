@@ -276,7 +276,8 @@ footer{
 
 	footer{
 		background: #293847;
-		padding: 50px 50px;
+		padding: 30px 50px;
+		font-weight: 400;
 	}
 
 	.menutitle{
