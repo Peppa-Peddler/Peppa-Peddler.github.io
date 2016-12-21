@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700');
 
 body{
-	font-family: 'Ubuntu', sans-serif;
+	/*font-family: 'Ubuntu', sans-serif;*/
+	font-family: 'Source Sans Pro', sans-serif;
 	background: url("../img/pattern.png");
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-spacing: 0.75px;
 }
 
 .b-nm{
@@ -20,11 +25,12 @@ body{
 	color: white !important;
 	background: #424242;
 	padding: 12px 60px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 10px;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0.2px;
+	font-size: 14px;
 	transition: background-color 0.5s ease;
 	box-shadow: 0px 10px 35px rgba(0,0,0,0.2);
+	font-weight: 400;
 }
 
 .contact:hover{
@@ -55,32 +61,32 @@ a{
 }
 
 .contacto{
-	border: 2px solid #00BEBE;
+	border: 2px solid #008CC8;
 	border-radius: 10px;
-	color: #00BEBE !important;
+	color: #008CC8 !important;
 	transition: background-color 0.5s ease;
 	padding: 10px 30px;
+	font-weight: 600 !important;
 }
 
 .contacto:hover{
-	background: #00BEBE;
+	background: #008CC8;
 	color: white !important;
 	text-decoration: none;
 }
 
 .menu a{
-	padding: 10px 30px;
+	padding: 10px 40px;
 	display: inline-block;
-	color: #525252;
-	text-transform: uppercase;
-	font-size: 10.1px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	letter-spacing: 1px;
+	/*text-transform: uppercase;*/
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #626262;
+	letter-spacing: 0.5px;
 }
 
 .menu a:hover{
-	color: #19B578;
+	color: #008CC8;
 	text-decoration: none;
 }
 
@@ -123,7 +129,7 @@ nav{
 }
 
 .filter{
-	background: rgba(0,190,190,0.8);
+	background: rgba(0,140,200,0.9);
 	padding: 150px 20px;
 }
 
@@ -138,7 +144,8 @@ nav{
 }
 
 .cover .filter{
-	padding: 100px 30px;
+	padding: 160px 30px;
+	background: rgba(0,140,200,0.5);
 }
 
 .hcr{
@@ -151,13 +158,12 @@ nav{
 }
 
 .cover h1{
-	font-weight: 300;
-	font-size: 25px;
-	line-height: 1.4;
-	font-family: 'Ubuntu', sans-serif;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	letter-spacing: 3px;
+	font-weight: 400;
+	font-size: 33px;
+	line-height: 1.35;
+	/*text-transform: uppercase;*/
+	margin-bottom: 30px;
+	/*letter-spacing: 1px;*/
 	color: white;
 }
 
@@ -166,43 +172,45 @@ nav{
 }
 
 .cover-desc{
-	font-weight: 200;
-	font-size: 13px;
+	font-weight: 400;
+	font-size: 15px;
 	line-height: 1.5;
-	letter-spacing: 2px;
-	font-family: 'Ubuntu', sans-serif;
+	letter-spacing: 0.5px;
 	color: white;
-	opacity: 0.8;
-	margin-bottom: 25px;
+	/*opacity: 0.9;*/
+	margin-bottom: 30px;
+}
+
+.cover .cover-desc{
+	max-width: 400px;
+	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
 .title{
-	font-size: 26px;
-	line-height: 1.3;
+	font-size: 27px;
+	line-height: 1.4;
 	margin: 0px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	color: #323232;
 	margin-bottom: 20px;
 }
 
 .title span{
 	font-weight: 400;
-	color: #00BEBE;
+	color: #008CC8;
 }
 
 .desc{
-	line-height: 1.7;
-	color: black;
-	font-weight: 300;
+	line-height: 1.5;
+	font-weight: 400;
 	font-size: 15px;
-	opacity: 0.5;
-	font-family: 'Ubuntu', sans-serif;
-	letter-spacing: 0.8px;
+	/*color: #34495e;*/
+	color: #727272;
 }
 
 .info-box{
-	padding: 80px 50px;
+	padding: 60px 50px;
 }
 
 .info-img{
@@ -211,7 +219,6 @@ nav{
 	background: url("../img/phone.jpg") center center;
 	background-size: cover;
 	height: 350px;
-	border-radius: 5px;
 }
 
 .phrase{
@@ -222,12 +229,11 @@ nav{
 
 .phrase h2{
 	color: white;
-	font-family: 'Ubuntu', sans-serif;
 	/*text-transform: uppercase;*/
-	font-size: 20px;
-	letter-spacing: 1px;
+	font-size: 25px;
+	/*letter-spacing: 1px;*/
 	line-height: 1.3;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 
@@ -236,35 +242,29 @@ nav{
 }
 
 .b-box{
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 .color-box{
 	background: #31BD7E;
-	background: #00BEBE;
-	min-height: 300px;
-	border-radius: 10px 0px 0px 10px;
-	padding-left: 50px;
-	padding-top: 60px;
-	padding-right: 50px;
-	padding-bottom: 50px;
+	background: #008CC8;
+	min-height: 350px;
+	padding: 65px 50px;
 }
 
 .color-t{
 	color: white;
-	font-weight: 300;
-	font-size: 20px;
-	letter-spacing: 1px;
-	opacity: 0.9;
-	margin-bottom: 15px;
-	line-height: 1.7;
+	font-weight: 400;
+	font-size: 25px;
+	letter-spacing: 0.5px;
+	margin-bottom: 20px;
+	line-height: 1.5;
 }
 
 .col-img-box{
 	background: url("../img/ai1.jpg") center center;
 	background-size: cover;
-	height: 300px;
-	border-radius: 0px 10px 10px 0px;
+	height: 350px;
 }
 
 .topic{
@@ -289,7 +289,7 @@ nav{
 
 .team{
 	padding: 100px 30px;
-	background: #00BEBE;
+	background: #008CC8;
 }
 
 .team .container{
@@ -297,40 +297,46 @@ nav{
 }
 
 .quote{
-	font-size: 18px;
-	line-height: 1.6;
-	font-weight: 300;
-	letter-spacing: 1px;
+	font-size: 25px;
+	line-height: 1.5;
+	font-weight: 400;
+	/*letter-spacing: 1px;*/
 	/*text-transform: uppercase;*/
 	color: white;
-	padding: 30px;
-	padding-top: 50px;
+	padding: 50px;
+	padding-top: 30px;
 }
 
 .minititle{
-	font-size: 15px;
-	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 22px;
+	/*letter-spacing: 1px;*/
 	padding-bottom: 10px;
 	display: inline-block;
 	margin-bottom: 10px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+}
+
+.topic .cover-desc{
+	margin-bottom: 40px;
+	font-size: 14px;
 }
 
 .minifilter{
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.75);
 	color: white;
 	height: 300px;
 	text-align: center;
-	padding: 60px 60px;
+	padding: 65px 60px;
 }
 
 small{
-	opacity: 0.5;
-	font-weight: 300;
+	opacity: 0.9;
+	font-weight: 400;
 	color: white;
-	font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 1.7;
+	font-size: 16px;
+	/*letter-spacing: 2px;*/
+	line-height: 1.5;
 }
 
 .relative{
@@ -349,10 +355,10 @@ small{
 
 .footer{
 	padding: 70px 0px;
-	opacity: 0.7;
-	line-height: 1.6;
-	font-weight: 300;
-	letter-spacing: 1px;
+	opacity: 0.9;
+	line-height: 1.4;
+	font-weight: 400;
+	/*letter-spacing: 1px;*/
 }
 
 @media (max-width: 900px) {
