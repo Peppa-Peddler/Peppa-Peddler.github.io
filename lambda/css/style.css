@@ -325,7 +325,7 @@ nav{
 .minifilter{
 	background: rgba(0,0,0,0.75);
 	color: white;
-	height: 300px;
+	min-height: 300px;
 	text-align: center;
 	padding: 65px 60px;
 }
@@ -364,7 +364,16 @@ small{
 @media (max-width: 900px) {
 
 	.quote{
-		padding-top: 25px;
+		padding: 5px;
+		padding-top: 30px;
+		padding-bottom: 0px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.team{
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.info-box{
@@ -375,10 +384,6 @@ small{
 		padding: 50px 30px;
 		border-radius: 0px;
 		min-height: auto;
-	}
-
-	.title{
-		font-size: 21px;
 	}
 
 	.col-img-box{
@@ -412,10 +417,14 @@ small{
 		text-align: left;
 	}
 
+	.cover .filter{
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
 	.cover h1{
-		font-size: 25px;
+		font-size: 30px;
 		line-height: 1.5;
-		letter-spacing: 10px;
 		margin-bottom: 20px;
 	}
 
