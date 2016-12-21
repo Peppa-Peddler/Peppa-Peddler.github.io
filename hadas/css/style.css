@@ -14,6 +14,11 @@ body{
 
 /* <MENU> */
 
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
 nav{
 	padding: 7px 20px;
 	font-size: 20px;
@@ -299,8 +304,8 @@ footer p{
 		margin-bottom: 20px;
 		margin-top: 30px;
 		color: white;
-		font-size: 20px;
-		font-weight: 600;
+		font-size: 18px;
+		font-weight: 400;
 	}
 
 	.extra-desktop{
@@ -311,7 +316,7 @@ footer p{
 		padding-top: 250px;
 		padding-bottom: 20px;
 		text-align: center;
-		background: rgba(0,0,40,0.6);
+		background: rgba(40,40,40,0.7);
 	}
 
 	.menu i{
