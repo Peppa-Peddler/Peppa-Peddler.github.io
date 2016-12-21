@@ -309,7 +309,7 @@ nav{
 
 .minititle{
 	font-weight: 600;
-	font-size: 22px;
+	font-size: 18px;
 	/*letter-spacing: 1px;*/
 	padding-bottom: 10px;
 	display: inline-block;
@@ -323,7 +323,7 @@ nav{
 }
 
 .minifilter{
-	background: rgba(0,0,0,0.75);
+	background: rgba(0,0,0,0.85);
 	color: white;
 	min-height: 300px;
 	text-align: center;
