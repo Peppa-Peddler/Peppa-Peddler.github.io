@@ -260,9 +260,7 @@ a{
 }
 
 .color-box{
-	background: #31BD7E;
-	background: #008CC8;
-	background: #3961B6;
+	background: #5471D6;
 	min-height: 350px;
 	padding: 90px 60px;
 }
@@ -304,7 +302,7 @@ a{
 
 .team{
 	padding: 100px 30px;
-	background: #3961B6;
+	background: #5471D6;
 }
 
 .team .container{
