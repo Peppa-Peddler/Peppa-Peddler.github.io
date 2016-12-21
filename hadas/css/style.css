@@ -156,6 +156,14 @@ nav{
 	display: block;
 }
 
+.solicitar .sm{
+	font-size: 13px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	opacity: 0.7;
+}
+
 .historial:hover{
 	text-decoration: none;
 	color: inherit;
@@ -197,6 +205,8 @@ footer{
 		line-height: 1.35;
 		margin: 0px;
 		font-size: 14.5px;
+		text-align: left;
+		opacity: 1;
 	}
 
 	body{
@@ -217,7 +227,7 @@ footer{
 	}
 
 	.menu .sm{
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 		font-size: 13px;
 		color: #585858;
 	}
