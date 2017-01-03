@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+body{
+	-webkit-font-smoothing: antialiased;
+	/*background: #F2F1EF;*/
+}
+
+.grid-item {
+	width: 25%;
+	padding: 10px;
+}
+
+.grid-item--width {
+	width: 40%;
+}
+
+.box{
+	padding: 20px;
+	/*background: rgba(0,0,0,0.02);*/
+	border: 1px solid black;
+	position: relative;
+}
+
+.especial{
+	font-size: 70px;
+	font-family: 'Reenie Beanie', sans-serif;
+	line-height: 0.8;
+	/*letter-spacing: -3px;*/
+	word-spacing: 15px;
+	text-transform: uppercase;
+	z-index: 1;
+	position: absolute;
+	bottom: 100px;
+	right: -80px;
+	width: 300px;
+	word-spacing: 10px;
+	color: black;
+	/*text-align: right;*/
+}
+
+.desc{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 3px;
+}
+
+.box img{
+	margin: 20px 0px;
+	z-index:  -2;
+	position: relative;
+}
+
+.box h2{
+	text-align: center;
+	font-family: 'Antic Didone', sans-serif;
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-shadow: 0px 0px 5px white;
+}
+
+.box .desc{
+	text-align: center;
+}
+
+.text{
+	text-align: justify;
+	font-size: 17px;
+	word-spacing: 2px;
+	letter-spacing: -0.2px;
+	font-family: 'PT Serif', sans-serif;
+	padding-right: 190px;
+}
