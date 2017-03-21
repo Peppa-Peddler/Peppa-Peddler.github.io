@@ -50,6 +50,16 @@ body {
 	overflow: hidden;
 }
 
+.body p > span{
+	text-transform: uppercase;
+	margin-right: 5px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	background: rgba(0,0,0,0.1);
+	font-weight: 600;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 nav{
 	font-family: 'Federo', serif;
 	position: fixed;
