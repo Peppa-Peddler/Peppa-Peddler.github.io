@@ -1,96 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Federo');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
-@import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	border-top: 45px solid black;
 	margin: 0px;
-	padding: 20px;
-}
-
-.title{
-	padding: 20px 20px;
-}
-
-.title h1{
-	font-family: 'Federo', serif;
-	font-size: 40px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	word-spacing: 6px;
-	line-height: 1.1;
-	font-weight: normal;
-}
-
-.desc {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
-	padding: 20px 0px;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
+	background: #F4F4F4;
 }
 
 .container{
-	max-width: 750px;
-	margin: 0 auto;
+	max-width: 900px;
 }
 
-.body{
-	font-family: 'Alegreya', sans-serif;
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.row > div{
+	padding: 0px;
+}
+
+.nav{
+	padding: 20px;
+	text-align: right;
+	font-weight: 40;
 	font-size: 20px;
-	margin: 0px;
-	padding: 0px 20px;
+	padding-top: 50px;
+	font-weight: 500;
 }
 
-.body p{
-	max-width: 650px;
-	overflow: hidden;
+.nav a{
+	display: block;
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: 400;
+	color: #65AE81;
 }
 
-.body p > span{
-	text-transform: uppercase;
-	margin-right: 5px;
-	font-size: 17px;
-	letter-spacing: 1px;
-	background: rgba(0,0,0,0.1);
-	font-weight: 600;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-nav{
-	font-family: 'Federo', serif;
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 8px 0px;
-	width: 100%;
+.title{
 	background: white;
-	box-shadow: 0px 5px 10px rgba(0,0,0,0.05);
-	text-align: center;
-	letter-spacing: 2px;
-	color: black;
-	font-weight: 600;
+	padding: 200px 20px;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.2;
 }
 
-nav .container{
+.title p{
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	max-width: 200px;
+	margin-top: 30px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.homer-img{
+	background: url(img/homer.jpeg) center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+	top: -130px;
+	margin-bottom: -130px;
+}
+
+.desc{
+	background: #62AF81;
+	padding: 20px;
+	padding-top: 140px;
+	padding-bottom: 50px;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	height: 270px;
 	position: relative;
 }
 
-nav a {
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 4px 10px;
-	font-size: 14px;
-	color: #393939;
-	text-decoration: none;
-	border: 0px solid black;
+.desc span{
+	font-weight: 700;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+.desc > .numb, .poems > .numb{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: white;
+	color: black;
+	padding: 20px 25px;
+	font-size: 11px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+
+.poems{
+	position: relative;
+	padding: 70px 20px;
+	font-family: 'Lora', sans-serif;
+	font-size: 17px;
+
+}
+
+.red{
+	background: #E9383D;
+	color: white;
+}
+
+.blue{
+	background: #C0DFE3;
+	color: black;
 }
