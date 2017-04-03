@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="inner">
+		<div class="outer">
+			<div class="cover">
+
+				<img src="img/molecular.png">
+
+				<h1 class="main-title">
+					Sobre su entorno
+				</h1>
+
+				<div class="question-area">
+					<div class="row g-three">
+						<div class="grid fst-grid"><span class="t-row">¿Tienes algún familiar y/o amigo cercano de tu familia que te podría ayudar a conseguir un puesto de trabajo…</span></div>
+						<div class="grid"><span class="t-row">Muchos</span></div>
+						<div class="grid"><span class="t-row">Algunos</span></div>
+						<div class="grid"><span class="t-row">Ninguno</span></div>
+					</div>
+					<div class="row g-three">
+						<div class="grid fst-grid"><p class="name">…que sea alto funcionario del gobierno?<br></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+					</div>
+					<div class="row g-three">
+						<div class="grid fst-grid"><p class="name">...que sea ejecutivo de una empresa?<br></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+					</div>
+					<div class="row g-three">
+						<div class="grid fst-grid"><p class="name">…que sea rico (ingresos mensuales mayores a 40,000 soles)?<br></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+					</div>
+				</div>
+
+				<div class="btn-area">
+					<a href="ingreso.html" class="btn btn-visible">Siguiente</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+	var elements = document.getElementsByClassName("button");
+	for( var elidx = 0 ; elidx < elements.length ; elidx++ ){
+		elements[elidx].onclick = function(){
+			this.className = "button selected";
+		};
+	}
+	
+</script>
+</body>
+</html>

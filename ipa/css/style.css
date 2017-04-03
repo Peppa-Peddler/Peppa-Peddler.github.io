@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 *{-webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -9,210 +9,259 @@ body{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Lato', sans-serif;
-	color: #525252;
-	background: #FEFEFD;
+	color: #404040;
 }
 
-.inner{
-	width: 100%;
-	text-align: center;
-}
+.inner{width: 100%; text-align: center;}
+.outer{width: 900px; margin: 0 auto;}
 
-.outer{
-	width: 900px;
-	margin: 0 auto;
-}
-
-.grid{
-	width: 140px;
-	height: 100px;
-	float: left;
-	display: inline-block;
-	position: relative;
-	padding: 7px;
-}
-
-.grid-2{
-	width: 450px;
+.cover{
+	padding: 20px;
 	text-align: left;
-	height: auto;
-	letter-spacing: 0.5px;
-	font-size: 12px;
-	padding: 10px;
+	margin-top: 50px;
 }
 
-.grid-5{
-	width: 180px;
-}
-
-.grid > div{
-	height: 100%;
-	cursor: pointer;
-}
-
-.grid > div.un-selected{
-	background: #f9f9f9;
-}
-
-.grid > div.selected{
-	background: #AFF5DC;
-}
-
-.grid > div.selected:hover{
-	background: #AFF5DC;
-}
-
-.grid > div:hover{
-	background: #DCFAEF;
-}
-
-.f-grid{
-	padding: 0px 15px;
-	width: 200px;
-	line-height: 1.2;
-	text-align: left;
-	color: #595959;
-	font-size: 19px;
-}
-
-.f-grid > p > span{
-	color: #a9a9a9;
-	font-size: 11px;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.grid p{
-	position: absolute;
-	width: 100%;
-	margin: 0px;
-	bottom: 10px;
-	font-weight: 700;
-	padding: 5px;
-}
-
-.grid-2 p{
-	position: static;
-	margin-bottom: 5px;
-	font-size: 14px;
-	text-transform: none;
-}
-
-.grid-2 p.amigos{
-	font-size: 15px;
+.main-title{
+	font-size: 30px;
 	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	margin: 35px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 30px;
 }
 
-.percepciones .grid{
-	height: 140px;
+.subtitle{
+	font-size: 20px;
+	font-weight: 400;
+	color: #606060;
 }
 
-.percepciones .f-grid{
-	width: 340px;
+.subtitle span{
+	font-weight: 900;
 }
 
-.percepciones .grid > p{
+.desc{
 	font-size: 16px;
-	padding-right: 20px;
-	padding-left: 0px;
+	font-weight: 900;
+	color: #2EBD88;
 }
 
-.percepciones .t-row > .grid > p{
-	font-size: 11px;
-	padding: 7px;
+.btn-area{
+	margin-top: 60px;
+	margin-bottom: 50px;
 }
 
-.hr{
-	height: 1px;
-	background-color: black;
+.btn{
+	padding: 15px 20px;
+	border-radius: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	border: 2px solid #2EBD88;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.btn-visible{
+	background: #2EBD88;
+	color: white;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-visible:hover{
+	background: #30C498;
+	border: 2px solid #30C498;
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+
+}
+
+.btn-invisible{
+	color: #2EBD88;
+}
+
+.question-area{
+	margin-top: 60px;
 }
 
 .row{
 	overflow: auto;
 	zoom: 1;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-	/*background: white;*/
-	/*margin-bottom: 10px;*/
-	/*border-radius: 10px;*/
-}
-
-.row:last-child{
-	border-bottom: none;
-}
-
-.t-row{
-	color: #595959;
-	background: none;
-	border: none;
-	margin-bottom: 5px;
-}
-
-.t-row p{
-	font-weight: 900;
-	font-size: 11px;
-	letter-spacing: 1.2px;
-	line-height: 1.4;
-	text-transform: uppercase;
-	color: #595959;
-}
-
-.t-row .grid{
-	padding: 0px;
-}
-
-.amigo{
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.amigo > .row{
-	border-bottom: none;
 	margin-bottom: 0px;
 }
 
-.next{
-	margin: 70px 0px;
-	margin-top: 50px;
-	text-align: left;
-	padding-left: 12px;
+.grid{
+	width: 15%;
+	float: left;
 }
 
-.next button{
-	padding: 15px 70px;
-	background: #30C78F;
-	color: white;
-	border: none;
+.fst-grid{
+	width: 25%;
+}
+
+.button{
+	margin: 5px;
+	background: #f3f3f3;
+	height: 50px;
 	cursor: pointer;
-	border-radius: 5px;
+}
+
+.button:hover{background: #DCFAEF;}
+.selected, .selected:hover{background: #AFF5DC;}
+.unselected{background: #f3f3f3;}
+
+.t-row{
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	border-bottom: 1px solid white;
+	margin-bottom: 10px
+}
+
+/* mod */
+
+.fst-big .grid{
+	width: 12%;
+}
+
+.fst-big .fst-grid{
+	width: 20%;
+}
+
+.fst-big .button{
+	height: 80px;
+}
+
+.fst-big .g-med{
+	width: 32%;
+	padding-left: 5px;
+}
+
+.fst-big .g-med > .t-row{
+	/*font-size: 13px;*/
+	color: #2EBD88;
+	text-align: right;
+	/*margin-top: 5px;*/
+}
+
+.g-great{
+	margin-bottom: 10px;
+}
+
+.g-great .grid{
+	width: 25%;
+	padding: 0px 5px;
+}
+
+.g-great .fst-grid{
+	width: 25%;
+	padding: 0px;
+}
+
+.g-three .grid{
+	width: 15%;
+}
+
+.g-three .fst-grid{
+	width: 55%;
+}
+
+.g-three .fst-grid > .t-row{
+	text-align: right;
+	font-size: 17px;
+}
+
+.g-three .fst-grid{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.aspectos .fst-grid{
+	text-align: right;
+	padding-right: 10px;
+}
+
+.g-three p.name{
+	font-size: 15px;
+	color: #707070;
 	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: px;
+	padding-top: 20px;
+}
+
+p.name{
+	font-size: 16px;
+	font-weight: 900;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+p.name > span{
+	font-size: 13px;
+	font-weight: 900;
+	color: #b9b9b9;
+}
+
+p.pregunta{
+	margin: 0px;
+	font-size: 17px;
+	font-weight: 900;
+	margin-bottom: 8px;
+}
+
+.percepciones .row{
+	margin-bottom: 30px;
+}
+
+input[type="text"]{
+	border: none;
+	width: 250px;
 	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	background: #f0f0f0;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+input[type="text"].amigos{
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+input[type="text"].i-med{
+	width: 100%;
+	border-radius: 0px;
+	margin-top: 5px;
+	margin-bottom: 7px;
+	font-size: 14px;
+	padding: 8px 10px;
+	background: rgba(0,0,0,0.02);
+}
+
+input[type="radio"]{
+	margin-top: 12px;
+}
+
+label{
+	font-size: 15px;
+	font-weight: 700;
+	color: #797979;
+}
+
+.contactado{
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.contactado label{
+	font-size: 14px;
+	font-weight: 900;
+	color: #898989;
 }
 
 select{
-	font-size: 14px;
-	font-family: 'Lato', sans-serif;
 	width: 100%;
+	background: rgba(0,0,0,0.02);
 	border: none;
-	background: #f9f9f9;
-	font-weight: 700;
-	color: #a0a0a0;
-}
-
-input{
-	padding: 1px 7px;
-	background: none;
-	background: #f9f9f9;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #a0a0a0;
-	border: none;
-	width: 100%;
-	font-size: 14px;
-	border-radius: 5px;
+	font-size: 13px;
+	padding: 10px;
 }

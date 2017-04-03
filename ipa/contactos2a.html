@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="inner">
+		<div class="outer">
+			<div class="cover">
+
+				<img src="img/molecular.png">
+
+				<h1 class="main-title">
+					Tus amigos cercanos
+				</h1>
+
+				<h2 class="subtitle">
+					A continuación, indica con qué frecuencia interactuas con las personas seleccionadas:
+				</h2>
+
+				<p class="desc">
+					También indicanos sobre las organizaciones donde laboran.
+				</p>
+
+				<div class="question-area">
+					<div class="row fst-big">
+						<div class="grid fst-grid"><span class="t-row"></span></div>
+						<div class="grid"><span class="t-row">Conversamos 1 vez a la semana</span></div>
+						<div class="grid"><span class="t-row">Conversamos 2 o 3 veces por semana</span></div>
+						<div class="grid"><span class="t-row">Conversamos interdiario</span></div>
+						<div class="grid"><span class="t-row">Conversamos todos los dias</span></div>
+						<div class="grid g-med"><span class="t-row">Nombre de la organización donde trabajan <br>y tipo de organización</span></div>
+					</div>
+					<div class="row fst-big">
+						<div class="grid fst-grid"><p class="name">Carlos Ferreyros Vicuña<br><span>(Economía 5to ciclo)</span></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid g-med">
+							<input placeholder="eje: claro" class="i-med" type="text">
+							<select>
+								<option>Entidad pública</option>
+								<option>Privada lucrativa</option>
+								<option>Sociedad civil</option>
+							</select>
+						</div>
+					</div>
+					<div class="row fst-big">
+						<div class="grid fst-grid fst-big"><p class="name">Carlos Ferreyros Vicuña<br><span>(Economía 5to ciclo)</span></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid g-med">
+							<input placeholder="eje: claro" class="i-med" type="text">
+							<select>
+								<option>Entidad pública</option>
+								<option>Privada lucrativa</option>
+								<option>Sociedad civil</option>
+							</select>
+						</div>
+					</div>
+					<div class="row fst-big">
+						<div class="grid fst-grid fst-big"><p class="name">Carlos Ferreyros Vicuña<br><span>(Economía 5to ciclo)</span></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid g-med">
+							<input placeholder="eje: claro" class="i-med" type="text">
+							<select>
+								<option>Entidad pública</option>
+								<option>Privada lucrativa</option>
+								<option>Sociedad civil</option>
+							</select>
+						</div>
+					</div>
+					<div class="row fst-big">
+						<div class="grid fst-grid fst-big"><p class="name">Carlos Ferreyros Vicuña<br><span>(Economía 5to ciclo)</span></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid g-med">
+							<input placeholder="eje: claro" class="i-med" type="text">
+							<select>
+								<option>Entidad pública</option>
+								<option>Privada lucrativa</option>
+								<option>Sociedad civil</option>
+							</select>
+						</div>
+					</div>
+					<div class="row fst-big">
+						<div class="grid fst-grid fst-big"><p class="name">Carlos Ferreyros Vicuña<br><span>(Economía 5to ciclo)</span></p></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid"><div class="button unselected"></div></div>
+						<div class="grid g-med">
+							<input placeholder="eje: claro" class="i-med" type="text">
+							<select>
+								<option>Entidad pública</option>
+								<option>Privada lucrativa</option>
+								<option>Sociedad civil</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-area">
+					<a href="conocerCA.html" class="btn btn-visible">Siguiente</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+	var elements = document.getElementsByClassName("button");
+	for( var elidx = 0 ; elidx < elements.length ; elidx++ ){
+		elements[elidx].onclick = function(){
+			this.className = "button selected";
+		};
+	}
+	
+</script>
+</body>
+</html>
