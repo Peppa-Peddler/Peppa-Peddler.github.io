@@ -6,86 +6,37 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="img/mask.png">
-	<title></title>
+	<title>LH</title>
 </head>
 
 <body>
 
 <div class="cover">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-			</div>
-			<div class="col-md-6">
-				<div class="title">
-					Movements of poetry: Ancient Gree Poetry Schools
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="content">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="homer-img img">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="desc">
-					<div class="numb"> D </div>
-					<span>Homer</span>, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="poems blue">
-					<div class="numb"> P </div>
-					RAGE: <br>
-					______ Sing, Goddess, Achilles’ rage,<br>
-					Black and murderous, that cost the Greeks<br>
-					Incalculable pain, pitched countless souls<br>
-					Of heroes into Hades’ dark,<br>
-					And left their bodies to rot as feasts<br>
-					For dogs and birds, as Zeus’ will was done.<br>
-					__ Begin with the clash between Agamemnon--<br>
-					The Greek warlord--and godlike Achilles.<br>
-					<br>
-					__ Which of the immortals set these two<br>
-					At each other’s throats?<br>
-					____________ Apollo<br>
-					Zeus’ son and Leto’s, offended<br>
-					By the warlord. Agamemnon had dishonored<br>
-					Chryses, Apollo’s priest, so the god<br>
-					Struck the Greek camp with plague,<br>
-					And the soldiers were dying of it.
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="poems red">
-					<div class="numb"> P </div>
-					By now, all the others who had fought at Troy—<br>
-					At least those who had survived the war and the sea—<br>
-					Were safely back home. Only Odysseus<br>
-					Still longed to return to his home and his wife.<br>
-					The nymph Calypso, a powerful goddess—<br>
-					And beautiful—was clinging to him<br>
-					In her caverns and yearned to possess him.
-				</div>
-			</div>
-		</div>
+	<div class="container-fluid">
+		<div id="content"></div>
 	</div>
 </div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+	$.getJSON("data.json",
+		function(data){
+ 			$.each(data, function(i,poem){
+ 				content  = '<div class="col-md-3">'
+				content += 		'<a href="'+poem.link+'" class="poem">';
+				content +=			'<p class="poet">';
+				content +=				'<span>'+poem.movement+'</span><br>'+poem.poet+'</p>'
+				content +=			'</p>';
+				content +=			'<p class="title">';
+				content +=				'<span>'+poem.poem+'</span>';
+				content +=			'</p>';
+				content += 		'<a/>';
+				content += 		'<a href="'+poem.link_es+'" class="translation">—translation</a>';
+				content += '</div>';
+				$(content).appendTo("#content");
+			});
+		});
+</script>
 </body>
 </html>
