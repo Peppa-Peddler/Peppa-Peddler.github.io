@@ -24,7 +24,7 @@
 		function(data){
  			$.each(data, function(i,poem){
  				content  = '<div class="col-md-3">'
-				content += 		'<a href="'+poem.link+'" class="poem">';
+				content += 		'<a href="'+poem.link+'" target="_blank" class="poem">';
 				content +=			'<p class="poet">';
 				content +=				'<span>'+poem.movement+'</span><br>'+poem.poet+'</p>'
 				content +=			'</p>';
@@ -32,7 +32,7 @@
 				content +=				'<span>'+poem.poem+'</span>';
 				content +=			'</p>';
 				content += 		'<a/>';
-				content += 		'<a href="'+poem.link_es+'" class="translation">—translation</a>';
+				content += 		'<a href="'+poem.link_es+'" target="_blank" class="translation">—translation</a>';
 				content += '</div>';
 				$(content).appendTo("#content");
 			});
