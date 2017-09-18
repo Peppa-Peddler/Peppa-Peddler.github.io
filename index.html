@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<title></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	 <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="video.css">
+	<link rel="stylesheet" type="text/css" href="sansation.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="img/mask.png">
-	<title>LH</title>
 </head>
-
 <body>
-
-<div class="cover">
-	<div class="container-fluid">
-		<div id="content"></div>
+			<div class="logoop">
+			<a href="http://ojo-publico.com/">
+				<img src="logo-op.png">
+			</a>
+		</div>
+	<div class="container">
+		<div class="cover">
+			<h2>— Las víctimas de la violencia en el Perú —</h2>
+			<h1><span>Los</span> <span>deudores</span> <span>de</span> <span>la</span> <span>corrupción</span></h1>
+			<div class="row">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6 parag aright">
+					<h3>Lorem ipsum dolor sit amet</h3>
+					Lorem ipsum dolor sit amet, <span>consectetur adipisicing</span> elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud <span>exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</div>
+			</div>
+			<a class="button" href="">
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+				Ver notas
+			</a>
+		</div>
 	</div>
-</div>
 
+	<div class="new">
+		<div class="content">
+			<div class="fil">
+					<p class="date">
+						Martes 20 Agosto, 2017
+					</p>
+					<h4>
+						La época del terror en el Perú dejó más afectados
+					</h4>
+					<p class="bajada">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="new">
+		<div class="content">
+			<div class="fil">
+					<p class="date">
+						Martes 20 Agosto, 2017
+					</p>
+					<h4>
+						La época del terror en el Perú dejó más afectados
+					</h4>
+					<p class="bajada">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="new">
+		<div class="content">
+			<div class="fil">
+					<p class="date">
+						Martes 20 Agosto, 2017
+					</p>
+					<h4>
+						La época del terror en el Perú dejó más afectados
+					</h4>
+					<p class="bajada">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+<div class="filter"></div>
+<video autoplay loop id="video-background" muted plays-inline>
+  <source src="background.mp4" type="video/mp4">
+</video>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script type="text/javascript">
-	$.getJSON("data.json",
-		function(data){
- 			$.each(data, function(i,poem){
- 				content  = '<div class="col-md-3">'
-				content += 		'<a href="'+poem.link+'" target="_blank" class="poem">';
-				content +=			'<p class="poet">';
-				content +=				'<span>'+poem.movement+'</span><br>'+poem.poet+'</p>'
-				content +=			'</p>';
-				content +=			'<p class="title">';
-				content +=				'<span>'+poem.poem+'</span>';
-				content +=			'</p>';
-				content += 		'<a/>';
-				content += 		'<a href="'+poem.link_es+'" target="_blank" class="translation">—translation</a>';
-				content += '</div>';
-				$(content).appendTo("#content");
-			});
-		});
-</script>
 </body>
 </html>
