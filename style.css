@@ -37,6 +37,10 @@ h1{
 	margin-bottom: 90px;
 }
 
+h1 span{
+	opacity: 0;
+}
+
 h2{
 	font-size: 16px;
 	text-transform: uppercase;

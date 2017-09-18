@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
 			<div class="logoop">
 			<a href="http://ojo-publico.com/">
 				<img src="logo-op.png">
@@ -20,7 +19,7 @@
 	<div class="container">
 		<div class="cover">
 			<h2>— Las víctimas de la violencia en el Perú —</h2>
-			<h1><span>Los</span> <span>deudores</span> <span>de</span> <span>la</span> <span>corrupción</span></h1>
+			<h1><span class="second">Los</span> <span class="first">deudores</span> <span class="second">de la</span> <span class="first">corrupción</span></h1>
 			<div class="row">
 				<div class="col-md-6">
 				</div>
@@ -107,5 +106,16 @@
 </video>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+$( document ).ready(function(){
+	$('.first').animate({
+		opacity: '1'
+	},1200, function(){
+		$('.second').animate({
+			opacity: '1'
+		},800);
+	});
+})
+</script>
 </body>
 </html>
