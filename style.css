@@ -181,6 +181,16 @@ h3{
 	padding: 15px;
 }
 
+.tag{
+	font-size: 15px;
+	/*text-transform: uppercase;*/
+	padding: 25px;
+	padding-top: 20px;
+	letter-spacing: 0.6px;
+	font-weight: 500;
+	color: #FE2634;
+}
+
 .footer{
 	padding: 20px 10px;
 	font-family: 'Roboto', sans-serif;
