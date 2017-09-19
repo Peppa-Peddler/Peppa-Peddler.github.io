@@ -138,6 +138,11 @@ h3{
 	background-size: cover;
 }
 
+.img4{
+	background: url(http://ojo-publico.com/sites/default/files/editor/u12/img_0600_c.jpg) center center;
+	background-size: cover;
+}
+
 .new {
 	/*border-top: 1px solid rgba(255,255,255,0.2);*/
 	/*padding-top: 20px;*/
