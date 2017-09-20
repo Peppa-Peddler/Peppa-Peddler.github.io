@@ -19,5 +19,9 @@
 	width: auto;
 	height: auto;
 	z-index: -90;
-	background: rgba(30,30,30,0.85);
+	background: rgba(10,10,10,1);
+	transition: background .4s ease-out;
+	-moz-transition: background .4s ease-out;
+	-webkit-transition: background .4s ease-out;
+	-o-transition: background .4s ease-out;
 }

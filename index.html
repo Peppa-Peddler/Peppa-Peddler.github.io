@@ -19,9 +19,9 @@
 
 	<div class="container">
 		<div class="cover">
-			<h2>— Las víctimas de la violencia en el Perú —</h2>
+			<h2 class="wait">— Las víctimas de la violencia en el Perú —</h2>
 			<h1><span class="second">Los</span> <span class="first">deudores</span> <span class="second">de la</span> <span class="first">corrupción</span></h1>
-			<div class="row">
+			<div class="row wait">
 				<div class="col-md-6">
 				</div>
 				<div class="col-md-6 parag aright">
@@ -32,7 +32,7 @@
 					consequat.
 				</div>
 			</div>
-			<a class="button" href="">
+			<a class="button smooth wait" href="#news">
 				<i class="fa fa-angle-down" aria-hidden="true"></i>
 				Ver notas
 			</a>
@@ -40,7 +40,7 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" id="news">
 				<div class="row new">
 					<div class="col-md-4 img">
 						<div class="img4">
@@ -137,12 +137,30 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript">
 $( document ).ready(function(){
-	$('.first').animate({
-		opacity: '1'
-	},1200, function(){
-		$('.second').animate({
+	
+		$('.first').animate({
 			opacity: '1'
+		},1000, function(){
+			$('.second').animate({
+				opacity: '1'
+			},800);
+		});
+		setTimeout(function(){
+			$('.filter').css({
+				background: 'rgba(30,30,30,0.85)'
+			});
 		},800);
+		setTimeout(function(){
+			$('.wait').animate({
+				opacity: '1'
+			},500);
+		},1200);
+
+	$(document).on('click', '.smooth', function(event){
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+		}, 500);
 	});
 })
 </script>

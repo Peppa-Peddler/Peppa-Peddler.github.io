@@ -6,6 +6,10 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.wait{
+	opacity: 0;
+}
+
 .logoop{
 	/*text-align: center;*/
 	margin-top: 10px;
