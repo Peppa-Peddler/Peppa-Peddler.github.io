@@ -117,7 +117,7 @@ footer span{
 }
 
 .landing .cover{
-	background-color: rgba(17,17,17,.55);
+	background-color: rgba(17,17,17,.20);
 }
 
 @media (max-width: 1100px) {
