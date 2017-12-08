@@ -1,0 +1,159 @@
+a.new{
+	color: #343434 !important;
+	text-decoration: none !important;
+	display: block;
+}
+
+a.new h3{
+	font-size: 25px;
+	font-family: Oswald,Arial,Helvetica,sans-serif;
+	line-height: 1.2;
+	margin-top: 10px;
+}
+
+a.new:hover h3{
+	color: #5B7180;
+}
+
+a.new .img{
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+a.new .img img{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	width: 100%;
+}
+
+.container-new{
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-top: 3px solid #424242;
+	border-bottom: 3px solid #424242;
+	padding: 20px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.container-new h4{
+	font-family: Oswald,Arial,Helvetica,sans-serif;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.car-back, .car-next{
+	position: absolute;
+	bottom: 170px;
+	cursor: pointer;
+}
+
+.car-back{
+	left: -70px;
+}
+
+.car-next{
+	right: -70px;
+}
+
+.post-title{
+	margin-bottom: 20px;
+}
+
+.post-body h2{
+	font-family: Oswald,Arial,Helvetica,sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+
+.post-body strong{
+	font-weight: 700;
+}
+
+footer{
+	padding-bottom: 30px;
+}
+
+footer span{
+	font-weight: 700;
+}
+
+.hwidone{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	padding-bottom: 16px;
+	font-size: 16px;
+	margin-left: 15px;
+	font-weight: 700;
+	display: inline;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+.hwidone-cont{
+	display: none;
+	position: fixed;
+	z-index: 1300;
+	width: 100%;
+	top: 0px;
+	background: #fff;
+	height: 100%;
+	overflow: auto;
+}
+
+.close-hwid{
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.landing .cover{
+	background-color: rgba(17,17,17,.55);
+}
+
+@media (max-width: 1100px) {
+	.car-back, .car-next{
+		background: #fff;
+		z-index: 30;
+		border-radius: 32px;
+		padding: 10px;
+		width: 50px;
+		text-align: center;
+		bottom: 185px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		cursor: pointer;
+	}
+	.car-back{
+		left: 2px;
+	}
+
+	.car-next{
+		right: 2px;
+	}
+	.landing .bg, .landing .landing-video{
+		height: 100%;
+		width: auto;
+	}
+}
+
+@media (max-width: 640px){
+	.landing .content{
+		position: static;
+		width: auto;
+		transform: none;
+		margin: 30px;
+		margin-top: 70px;
+	}
+	.landing .content h1{
+		font-size: 60px;
+	}
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="https://ojo-publico.com/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="src/scripts/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/chosen.css">
+    <link rel="stylesheet" href="dist/styles/screen.min.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/cot.css">
+</head>
+
+<body>
+    <header class="main-header main-header-fixed">
+        <a class="logo-op" href="https://ojo-publico.com/" target="_blank">
+            <img alt="OjoPúblico" src="dist/images/logo-op.png">
+        </a>
+        <nav class="navbar">
+        </nav>
+    </header>
+    <div class="landing">
+        <!-- <div class="bg" id="bg0"></div>
+        <div class="bg" id="bg1"></div>
+        <div class="bg" id="bg2"></div> -->
+        <video class="landing-video" autoplay loop>
+            <source src="src/video/prueba intro 3.mp4" type="video/mp4">
+            <!-- <source src="src/video/Secuencia 01.mp4" type="video/mp4"> -->
+        </video>
+        <div class="cover">
+            <div class="content">
+                <h1>Minería y conflictos al borde de la sequía</h1>
+                <div class="landing-text" id="landing-text"></div>
+                <button class="btn-go">Explorar</button>
+                <div class="hwidone">¿Cómo se hizo?</div>
+            </div>
+        </div>
+    </div>
+    <div class="viz-container">
+        <div class="aside">
+            <h1 class="title">Minería sin agua</h1>
+            <div class="abstract">
+                Conoce las cuencas donde la minería tiene licencia para extraer y usar agua en todo el Perú, cuáles operan en zonas con riesgo de sequía y qué conflictos sociales se desencadenaron a su paso.
+            </div>
+            <div class="filter">
+                <div class="label">Volumen de agua disponible:</div>
+                <div class="dh-check alta" id="check-alta" data-name="Alta">Alto</div>
+                <div class="dh-check media" id="check-media" data-name="Media">Medio</div>
+                <div class="dh-check baja" id="check-bajaA" data-name="Baja">Bajo</div>
+            </div>
+            <div class="switch">
+                <div class="label">Modificar mapa por número de licencias:</div>
+                <div class="switch-box off">
+                    <div class="bg"></div>
+                    <div class="item item1">Si</div>
+                    <div class="item item2">No</div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="tooltip" id="map-tooltip">
+                <div class="nombre"></div>
+            </div>
+            <svg id="map"></svg>
+        </div>
+        <div class="results">
+            <div class="label">BUSCAR</div>
+            <div class="filters">
+                <div class="filter">
+                    <div class="label">Por departamento:</div>
+                    <select class="chosen-select" id="select-departamento">
+                        <option value="todos" selected>Todos</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <div class="label">Por empresa:</div>
+                    <select class="chosen-select" id="select-empresa">
+                        <option value="todos" selected>Todos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="label" id="results-label">Cuencas:</div>
+            <div class="list" id="results"></div>
+        </div>
+        <div class="modal">
+            <div class="cuenca-info" id="cuenca-info">
+                <button class="btn-close" id="close-info">Cerrar</button>
+                <div class="info-wrapper">
+                    <div class="nombre"></div>
+                    <div class="cuenca-map">
+                        <svg id="cuenca-map"></svg>
+                    </div>
+                    <div class="row">
+                        <div class="stat stat-3">
+                            <div class="label">Volumen de agua disponible:</div>
+                            <div class="value disponibilidad-hidrica"></div>
+                        </div>
+                        <div class="stat stat-3">
+                            <div class="label">Autoridad Local del Agua (ALA):</div>
+                            <div class="value ala"></div>
+                        </div>
+                        <div class="stat stat-3">
+                            <div class="label">Se ubica entre los departamentos de:</div>
+                            <div class="value departamento"></div>
+                        </div>
+                    </div>
+                    <ul class="tabs">
+                        <li class="selected" id="tab1">
+                            <img src="dist/images/drop.png" /> Datos generales</li>
+                        <li id="tab2">
+                            <img src="dist/images/wagon.png" /> Empresas</li>
+                    </ul>
+                    <div class="blocks">
+                        <div class="block selected" id="block1">
+                            <div class="total-resolucion"></div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="row">
+                                        <div class="stat stat-1">
+                                            <div class="label">Por tipo de resolución:</div>
+                                            <div class="value tipo-resolucion"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="stat stat-1">
+                                            <div class="label">Por tipo de uso:</div>
+                                            <div class="value tipo-uso"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="row">
+                                        <div class="stat stat-1">
+                                            <div class="label">Por clase de fuente:</div>
+                                            <div id="chart-fuente"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block" id="block2">
+                            <div class="empresas">
+                                <div class="total"></div>
+                                <div class="empresas-conflictos"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post">
+        <header class="post-header">
+            <div class="container">
+                <h1 class="post-title">Minería y conflictos al borde de la sequía</h1>
+                <div class="post-abstract">
+                   Compañías mineras tienen licencia para extraer agua en 12 zonas con riesgo de sequía.
+                </div>
+                <div class="post-byline">
+                    Por
+                    <a href="https://www.lipsum.com/">Lorem ipsum</a> y
+                    <a href="https://www.lipsum.com/">Lorem ipsum</a>
+                </div>
+                <div class="post-date">
+                    30 de Noviembre, 2017
+                </div>
+            </div>
+        </header>
+        <div class="post-body">
+            <div class="post-content">
+                <div class="container">
+                    <p>
+                        Los conflictos mineros asociados a los usos del agua se han incrementado en los últimos años. Un mapa construido por <strong>Ojo-Publico.com</strong> muestra que  31 empresas  dedicadas a la extracción de minerales tienen  licencias para extraer y usar agua de ríos, quebradas y acuíferos en 12 zonas  declaradas en riesgo por escasez hídrica. La compañía con más permisos es Southern Copper.
+                    </p>
+                    <p>
+                        En noviembre del 2016 la sierra central del Perú afrontó la temporada más seca de los últimos 30 años. Según el Servicio Nacional de Meteorología (Senamhi), el fenómeno se extendió a Moquegua, Arequipa y Tacna, departamentos que habían sufrido un hecho similar el 2008. Durante todo el mes no se registraron lluvias y la población tuvo que potabilizar el agua estancada en sus represas para beber.
+                    </p>
+                    <p>
+                        Este no fue un hecho aislado. Durante la última década, el Instituto Nacional de Defensa Civil (Indeci) ha reportado 1.534 alertas por sequía en territorios alto andinos, donde la agricultura es la principal fuente económica de la población. En varias de estas zonas también está presente la minería, una actividad extractiva que utiliza grandes volúmenes de agua.
+                    </p>
+                    <p>
+                        Ojo-Publico.com obtuvo el detalle de las 1.810 licencias, autorizaciones y permisos que el Gobierno otorgó a 331 empresas mineras para que puedan explotar el mismo número de fuentes de agua  con el fin de procesar sus minerales, abastecer a sus campamentos o reducir el polvo en sus operaciones. Las licencias, a diferencia de los otros dos tipos de resoluciones, no tienen fecha de caducidad, por lo que podemos decir que al menos 736 de ellas siguen en uso.
+                    </p>
+                    <p>
+                        La data reúne las resoluciones emitidas desde 1970 a la fecha y nos permite conocer que en este tiempo la minería consiguió 155 resoluciones en 12 zonas del Perú con seria escasez de agua. Estas fueron entregadas, primero, por el Ministerio de Agricultura; luego por el Instituto Nacional de Recursos Naturales (Inrena) y finalmente, desde que fue creada el 2008, por la Autoridad Nacional del Agua (ANA).
+                    </p>
+                    <p>
+                        En la actualidad, 31 empresas mantienen licencias sobre 74 puntos de extracción en ríos, quebradas y acuíferos que confluyen en estos 12 territorios críticos, y que principalmente cruzan los departamentos de Tacna, Moquegua, Lima, La Libertad y Lambayeque.
+                    </p>
+                    <p>
+                        Según esta data, otras 54 compañías mineras están facultadas hasta hoy a intervenir en zonas donde el agua es medianamente constante, como en Arequipa, una región donde 18 proyectos en fase de exploración y otros 13 en etapa de exploración usan este recurso para sus operaciones.
+                    </p>
+                    <p>
+                        El Gobierno sabe dónde fueron otorgadas las licencias de agua para uso minero, pero no el volumen real de la oferta y demanda que soporta cada cuenca: el único balance hídrico nacional fue elaborado en 1979 y actualizado el 2012. Recién el año pasado la Autoridad Nacional del Agua (ANA) terminó un estudio integral a 12 de las 159 cuencas existentes, y estas no incluyen a las que están en riesgo de estrés hídrico en la zona sur del país.
+                    </p>
+                    <p>
+                        Por eso, las zonas que disponen de poca agua o están en riesgo de sequía podrían ser mayores.
+                    </p>
+                    <h2>
+                        LA DISPUTA POR EL RECURSO
+                    </h2>
+                    <p>
+                        Toda el agua dulce del Perú discurre por ríos, quebradas y acuíferos que se concentran en 159 territorios (cuencas), antes de perderse en el mar. La Autoridad Nacional del Agua (ANA) usa la información del Senamhi para clasificar estas cuencas de acuerdo al volumen de agua que tienen disponible para cada habitante, por año, y así determina cuáles son las zonas con afluencia de agua alta, media y baja. En esta última se encuentran las cuencas declaradas en riesgo de estrés hídrico o que han afrontado periodos de sequía.
+                    </p>
+                    <p>
+                        <strong>Ojo-Publico.com</strong> reconstruyó esta información y elaboró un mapa con el fin de conocer en qué tipo de cuencas se les otorgó licencias a las compañías mineras. La data revela que la mayoría de permisos en zonas con escasez de agua se entregaron a las multinacionales mineras: Southern Cooper, del Grupo México; y Anglo American, del conglomerado del mismo nombre con sede en Londres. 
+                    </p>
+                    <p>
+                        Southern Cooper está desplegada en Moquegua y Tacna, con sus minas de cobre Cuajone y Toquepala, pero también en Apurímac con su proyecto Los Chancas. Solo para atender las demandas de las dos primeras, la empresa usó 50.490 millones de litros de agua el 2015, según su memoria anual. Anglo American, por su parte, es dueña de la cuprífera Quellaveco, en Moquegua, que el próximo año iniciará su fase de explotación.
+                    </p>
+                    <p>
+                        Ambas compañías –que ya fueron blanco de protestas de la población por el posible impacto ambiental de sus operaciones– obtuvieron resoluciones para extraer agua de 41 fuentes de agua de las cuencas Locumba Sama, Tambo, e Ilo-Moquegua, todas incluidas en las declaratorias de emergencia emitidas anualmente por el Gobierno. Incluso el 2009, mediante Decreto Supremo 004, el Ejecutivo confirmó el “agotamiento de los recursos hídricos” en los ríos Caplina y Locumba Sama, en Tacna, y dictó recomendaciones para preservar el agua del subsuelo.
+                    </p>
+                    <p>
+                        Southern es la que mantendría el mayor número de licencias a la fecha, 15 en total, seguido de las empresas Minsur, en la cuenca del Rímac (Lima) y Yauliyacu en la cuenca Ushusuma (Tacna).
+                    </p>
+                    <p>
+                        Jorge Ghersi, gerente de agricultura del Gobierno Regional de Moquegua, explica los retos que afrontan los agricultores que conviven con la minería en esta temporada seca que se extenderá hasta fines de diciembre. 
+                    </p>
+                    <p>
+                        “Los cultivos de paltas, uvas y papas son nuestro principal sustento, pero por el déficit de lluvias que sufrimos las cosechas se redujeron en un 30%. La represa Pasto Grande, la única con la que contamos para emergencias como esta, ha acumulado este año solo 67 de los 200 millones de m3 que tiene de capacidad y por eso debemos usarla con restricciones. La poca agua que tenemos Si antes pedíamos una convivencia responsable con la minería, ahora es una exigencia”, agrega Ghersi.
+                    </p>
+                    <p>
+                        Moquegua y Arequipa, no solo han activado sus alarmas ante la actividad minera, sino también entre ellos mismos. El valle arequipeño de El Tambo, donde Southern Copper pretende retomar el proyecto Tía María, se riega con las filtraciones de la mencionada represa Pasto Grande, cuyas compuertas son controladas por su vecino: Moquegua. 
+                    </p>
+                    <p>
+                        Cada año esta región debería proveer a Arequipa 8.2 millones de m3 de agua, tal como se ordena en el Decreto Supremo 002-2008, pero desde el 2016, cuando se incrementó el riesgo de sequía, se niegan a hacerlo. Huber Valdivia, asesor en recursos hídricos del Gobierno Regional de Arequipa, explica que, ante la inacción de la ANA, presentarán en los próximos días una demanda penal contra Moquegua para obtener el recurso deseado. 
+                    </p>
+                    <p>
+                        “Ya estamos en conflicto por el agua. Al problema con las regiones vecinas se suma la minería. Donde tenemos una agricultura deprimente no podemos consentir la actividad boyante de una minería que solo regala pelotas o camisetas. Con regalos no se está impulsando la agricultura, el desarrollo de las comunidades ni la protección del agua. Y ese debe ser el nuevo enfoque minero”, añade Valdivia.
+                    </p>
+                    <p>
+                        Por intermedio de la gerencia de comunicaciones y asuntos externos, respectivamente, pedimos entrevistas con voceros de las mineras Southern y Anglo American, pero no respondieron. Sin embargo, en su página web, Anglo American informó tras la crisis hídrica del 2016 se vio obligada a renunciar a la captación del agua del río Asana y han limitado su consumo usando el 65% de agua reciclada.
+                    </p>
+                    <p>
+                        Southern, por su parte, ha confirmado que usará agua desalinizada de mar si el Gobierno le autoriza a continuar con el proyecto Tía María, en Arequipa, paralizada por graves protestas ante el miedo de la población por perder sus fuentes de agua.
+                    </p>
+                    <h2>
+                        CONFLICTOS SOCIALES
+                    </h2>
+                    <p>
+                        Según el mapa construido por Ojo-Publico.com, el 78% de licencias de agua se entregó en zonas con elevado caudal, como en las quebradas de los ríos Mantaro y Marañón. Contrario a lo que se podría pensar, ello no exoneró a las empresas de la pugna por este recurso: muchas de las cuencas que aparecen con disponibilidad hídrica alta cruzan Áncash, Apurímac, Cajamarca y Puno, departamentos que están incluidos en la lista de conflictos socioambientales identificados la Defensoría del Pueblo.
+                    </p>
+                    <p>
+                        Una de ellas es la minera Barrick Misquichilca, que tiene licencias para extraer agua en Áncash y dos reclamos de los caseríos Atupa, Antaurán y Mareniyoc por presuntamente haber secado sus manantiales y no brindarles la dotación de agua ofrecida a cambio. Según los reportes de la Defensoría, el diálogo entre ambas partes está abierto y la empresa indica que sí cumplió con todos los puntos de su estudio de impacto ambiental.
+                    </p>
+                    <p>
+                        El 25% de las 101 crisis sociales vigentes que ha mapeado dicha institución está relacionada a la minería y el agua. Las protestas no solo giran en torno al acceso, sino a la calidad de este recurso y su posible contaminación, y desde el 2011 a la fecha han dejado 1.100 heridos y 42 muertos. Estas cifras incluyen a la actividad mineral formal y la ilegal.
+                    </p>
+                    <p>
+                        Jorge Ghersi, gerente regional de Moquegua, reconoce que la escasez de agua ha reactivado el rol fiscalizador de la población ante la presencia minera: solo en el último mes han recibido denuncias sobre la contaminación del río Coralaque (donde opera la minera Aruntani) y un presunto mal manejo de residuos de Southern Copper en la cabecera de cuenca de la comunidad de Torata. 
+                    </p>
+                    <p>
+                        El jefe de la Oficina de Diálogo y Gobernabilidad de Arequipa, César Huamantuma, describe una actitud similar en su región: Este año, la Minera Buenaventura, propiedad de Roque Benavides, tuvo que firmar escrituras públicas ante la población cercana a su nuevo proyecto, Tambomayo, con el fin de asegurarles que no se dañarán los manantiales.
+                    </p>
+                    <p>
+                        La proyección de los escenarios posibles para el Perú ante la falta de agua no es esperanzadora. El Senamhi realizó un estudio para calcular el impacto que tendrá el cambio climático hacia el año 2050 y concluyó que las fuentes de agua disponibles en once cuencas de la costa sur del país, que incluyen a Moquegua, Tacna, Ica, se reducirán entre 42% y 48%.
+                    </p>
+                    <p>
+                        La guerra por el agua será más intensa.
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-new">
+        <h4>Más en Ojo Público</h4>
+        <div class="owl-carousel owl-theme">
+            <div>
+                <a class="new" href="https://laguerraporelagua.ojo-publico.com/es/">
+                    <div class="img">
+                        <img src="https://ojo-publico.com/sites/default/files/comic_list.png">
+                    </div>
+                    <h3>Cómic interactivo: La guerra por el agua en el sur del Perú</h3>
+                </a>
+            </div>
+            <div>
+                <a class="new" href="https://ojo-publico.com/467/sombras-y-vacios-en-el-manejo-del-agua-en-el-peru">
+                    <div class="img">
+                        <img src="https://ojo-publico.com/sites/default/files/monitoreo_ana_vertical.jpg">
+                    </div>
+                    <h3>Sombras y vacíos en el manejo del agua en el Perú</h3>
+                </a>
+            </div>
+            <div>
+                <a class="new" href="https://ojo-publico.com/502/el-agua-que-las-empresas-mineras-no-pagan">
+                    <div class="img">
+                        <img src="https://ojo-publico.com/sites/default/files/ana.png">
+                    </div>
+
+                    <h3>Las deudas pendientes de ocho mineras por el uso del agua</h3>
+                </a>
+            </div>
+            <div>
+                <a class="new" href="https://ojo-publico.com/348/sed-y-conflicto-en-los-andes-peruanos">
+                    <div class="img">
+                        <img src="https://ojo-publico.com/sites/default/files/yanacocha_conga-andina.jpg">
+                    </div>
+                    <h3>Sed y conflicto en los andes peruanos</h3>
+                </a>
+            </div>
+        </div>
+        <img src="src/images/back.png" class="car-back">
+        <img src="src/images/next.png" class="car-next">
+    </div>
+    <footer>
+        <div class="container">
+                    Dirección general: <span>Óscar Castilla C.</span> / 
+                    Equipo periodístico: <span>Óscar Castilla C., Jonathan Castro y Gianfranco Huamán.</span> /
+                    Ilustraciones: <span>Rocío Urtecho e Iván Cortez.</span> /
+                    Redes sociales: <span>Alonso Balbuena.</span> /
+                    Desarrollo web y diseño: <span>Jason Martínez </span>.
+        </div>
+    </footer>
+
+    <div class="hwidone-cont">
+        <img src="src/images/close.png" class="close-hwid">
+        <div class="post-body">
+            <div class="post-content">
+                <div class="container">
+                    <h2>¿Cómo se hizo?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="vendor/chosen.jquery.min.js"></script>
+    <script src="vendor/d3-cartogram.min.js"></script>
+    <script src="vendor/textures.min.js"></script>
+    <script src="vendor/typed.min.js"></script>
+    <!-- Load billboard.js with style -->
+    <script src="vendor/billboard.min.js"></script>
+    <link rel="stylesheet" href="vendor/billboard.min.css">
+    <script src="dist/scripts/main.js"></script>
+    <script type="text/javascript" src="src/scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+                responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                900:{
+                    items:3
+                }
+            }
+        });
+        $('.car-next').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.car-back').click(function() {
+            owl.trigger('prev.owl.carousel');
+        });
+        $('.hwidone').click(function(){
+            $('.hwidone-cont').fadeIn();
+            $('body').css('overflow','hidden');
+        });
+        $('.close-hwid').click(function(){
+            $('.hwidone-cont').fadeOut();
+            $('body').css('overflow','auto');
+        })
+    </script>
+</body>
+
+</html>

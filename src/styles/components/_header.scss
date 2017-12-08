@@ -1,0 +1,64 @@
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #111;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 0.5);
+
+    &-fixed {
+        position: fixed;
+        @media screen and (max-width: 678px) {
+            position: absolute;
+        }
+    }
+
+    .logo-op {
+        display: block;
+        float: left;
+
+        img {
+            display: block;
+            height: 30px;
+            margin: 10px 0 10px 20px;
+        }
+    }
+    .items {
+        position: absolute;
+        float: right;
+        padding: 30px 0;
+        top: 0;
+        right: 0;
+
+        @media screen and (max-width: 678px) {
+            display: none;
+        }
+
+        .item {
+            display: block;
+            float: left;
+            margin-left: 50px;
+            color: #D6D6D6;
+            height: 40px;
+            font: 400 17px/40px 'Oswald', sans-serif;
+            letter-spacing: 1px;
+            transition: color 0.4s ease 0s;
+            text-decoration: none;
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+
+            &:hover {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+        }
+    }
+    .navbar {
+        background-color: transparent;
+        height: 100%;
+    }
+}
