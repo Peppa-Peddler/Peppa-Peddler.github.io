@@ -173,6 +173,10 @@ p.blackquote{
 	margin-right: 15px;
 }
 
+.landing .content h1{
+		font-size: 80px;
+}
+
 @media (max-width: 1100px) {
 	.car-back, .car-next{
 		background: #fff;
