@@ -89,13 +89,11 @@
 			if(next.length){
 				var cover = next.data('cover');
 				console.log(cover);
-				if( cover+''=='0' ){
 					self.hide();
+				if( cover+''=='0' ){
 					next.show();
 				} else {
-					next.fadeIn(500, function(){
-						self.fadeOut();
-					})
+					next.fadeIn(500);
 				}
 				
 				next.find('.filter').fadeIn(500);

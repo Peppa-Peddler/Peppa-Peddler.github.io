@@ -7,7 +7,6 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 
 	font-family: 'Nothing You Could Do', cursive;
-
 	background: #000;
 	height: 100%;
 }
@@ -56,10 +55,12 @@ html{
 	margin-bottom: 0px;
 	padding: 30px;
 	pointer-events: none;
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none;
 }
 
 .start{
@@ -67,5 +68,5 @@ html{
 	width: 100%;
 	position: fixed;
 	background: #000;
-	z-index: 2000;
+	z-index: 5000;
 }
