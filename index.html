@@ -25,14 +25,31 @@
 </head>
 <body>
 
+<div class="start">
+
+</div>
+
 <div class="page page1" data-page="1" data-cover="1" style="background: url('img/page1.JPG') center center; background-size: cover;">
 </div>
 <div class="page page2" data-page="2" data-cover="0" style="background: url('img/page1.JPG') center center; background-size: cover;">
 	<div class="filter">
 		<div class="text">
 			<div class="container">
-				<p>
+				<p unselectable="on">
 					Hay una<br>persona sentada al lado.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page page3" data-page="3" data-cover="1" style="background: url('img/page2.JPG') center center; background-size: cover;">
+</div>
+<div class="page page4" data-page="4" data-cover="0" style="background: url('img/page2.JPG') center center; background-size: cover;">
+	<div class="filter">
+		<div class="text">
+			<div class="container">
+				<p unselectable="on">
+					No le puedo ver la cara.
 				</p>
 			</div>
 		</div>
@@ -44,14 +61,43 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 
+		var promises = [];
+		var lnh = 2;
+		for (var i = 1; i <= lnh; i++) {
+			(function (url, promise) {
+				var img = new Image();
+				img.onload = function () {
+					promise.resolve();
+				};
+				img.src = url;
+			})('img/page' + i + '.JPG', promises[i] = $.Deferred());
+		}
+
+		$.when.apply($, promises).done(function () {
+			// alert("All images ready sir!");
+			$('.start').fadeOut();
+		});
+
+		// the code starts here
+
 		$('.page').click(function(){
 			console.log('xd');
-			var it = $(this).data('page')+1;
+			var self = $(this);
+			var it = self.data('page')+1;
 			var next = $('.page'+it);
 			console.log(next);
 			if(next.length){
-				$(this).hide();
-				next.show();
+				var cover = next.data('cover');
+				console.log(cover);
+				if( cover+''=='0' ){
+					self.hide();
+					next.show();
+				} else {
+					next.fadeIn(500, function(){
+						self.fadeOut();
+					})
+				}
+				
 				next.find('.filter').fadeIn(500);
 			}
 		});
