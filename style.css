@@ -70,3 +70,25 @@ html{
 	background: #000;
 	z-index: 5000;
 }
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.start .relative{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.start img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
