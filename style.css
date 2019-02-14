@@ -1,97 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
-
-
 body{
--webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	font-family: 'Nothing You Could Do', cursive;
-	background: #000;
-	height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    background-image: url("background.png");
 }
 
-html{
-	height: 100%;
+@font-face {
+  font-family: one;
+   src: url('fonts/one.woff2');
 }
 
-.page{
-	height: 100%;
-	position: relative;
-	cursor: pointer;
-	display: none;
+h1{
+  font-family: 'one', sans-serif;
 }
 
-.page1{
-	display: block;
+.container{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
 }
 
-.text{
-	position: absolute;
-	top: 50%;
-	left: 0px;
-	width: 100%;
-	transform: translate(0,-50%);
+.body p{
+  text-align: left;
+  font-family: 'one', sans-serif;
+  /* text-transform: uppercase; */
+  font-weight: normal;
+  font-size: 32px;
+  color:  #333;
+  margin: 0px;
+  line-height: 1.0;
+  margin-bottom: 20px;
 }
 
-.text > .container{
-	max-width: 700px;
-}
-
-.filter{
-	background: rgba(0,0,0,0.4);
-	height: 100%;
-	width: 100%;
-	position: relative;
-	display: none;
-}
-
-.text p{
-	color: #fff;
-	font-size: 50px;
-	text-align: center;
-	opacity: 1;
-	line-height: 1.2;
-	margin-bottom: 0px;
-	padding: 30px;
-	pointer-events: none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	-o-user-select:none;
-	user-select:none;
-}
-
-.start{
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	background: #000;
-	z-index: 5000;
-}
-
-.loader {
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.start .relative{
-	height: 100%;
-	width: 100%;
-	position: relative;
-}
-
-.start p{
-	position: relative;
-	text-align: center;
-	top: 50%;
-	margin-bottom: 0px;
-	transform: translate(0,-50%);
-	color: #fff;
-	font-size: 30px;
+.body p span{
+  border-bottom: 3px solid #0066ff;
 }

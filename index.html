@@ -1,134 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<title></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta name="author" content="">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="robots" content="all, index, follow">
-	<meta name="subject" content=""/>
-	<!--  Meta Facebook-->
-	<link rel="canonical" href=""/>
-	<meta property="og:locale" content="es_ES" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content=" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content=" />
-	<meta property="og:image"  content="" />
-
-	<link rel="shortcut icon" href="icon_SD.png">
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-<div class="start">
-		<p>
-			<img src="img/rose.png" class="loader"><br>
-			<br>
-			Cargando
-		</p>
-</div>
-
-<div class="page page1" data-page="1" data-cover="1" style="background: url('img/page1.JPG') center center; background-size: cover;">
-</div>
-<div class="page page2" data-page="2" data-cover="0" style="background: url('img/page1.JPG') center center; background-size: cover;">
-	<div class="filter">
-		<div class="text">
-			<div class="container">
-				<p unselectable="on">
-					Hay una<br>persona sentada al lado.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="page page3" data-page="3" data-cover="1" style="background: url('img/page2.JPG') center center; background-size: cover;">
-</div>
-<div class="page page4" data-page="4" data-cover="0" style="background: url('img/page2.JPG') center center; background-size: cover;">
-	<div class="filter">
-		<div class="text">
-			<div class="container">
-				<p unselectable="on">
-					No le puedo ver la cara.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="page page5" data-page="5" data-cover="1" style="background: #000">
-	<div class="filter">
-		<div class="text">
-			<div class="container">
-				<p unselectable="on">
-					Me habla.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="page page6" data-page="6" data-cover="0" style="background: #000">
-	<div class="filter">
-		<div class="text">
-			<div class="container">
-				<p unselectable="on">
-					Lo siento cada vez más cerca.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-
-		var promises = [];
-		var lnh = 2;
-		for (var i = 1; i <= lnh; i++) {
-			(function (url, promise) {
-				var img = new Image();
-				img.onload = function () {
-					promise.resolve();
-				};
-				img.src = url;
-			})('img/page' + i + '.JPG', promises[i] = $.Deferred());
-		}
-
-		$.when.apply($, promises).done(function () {
-			// alert("All images ready sir!");
-			$('.start').fadeOut();
-		});
-
-		// the code starts here
-
-		$('.page').click(function(){
-			console.log('xd');
-			var self = $(this);
-			var it = self.data('page')+1;
-			var next = $('.page'+it);
-			console.log(next);
-			if(next.length){
-				var cover = next.data('cover');
-				console.log(cover);
-					self.hide();
-				if( cover+''=='0' ){
-					next.show();
-				} else {
-					next.fadeIn(300);
-				}
-				
-				next.find('.filter').fadeIn(300);
-			}
-		});
-
-	})
-</script>
-</body>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I</h1>
+      <div class="body">
+          <p>
+            There is only one problem with you...
+          </p>
+          <p>
+            And that is that<br><span>I love you</span>...
+          </p>
+          <p>
+            I think It is more a problem of mine than yours.
+          </p>
+          <p>
+            Good news are that It will be over some day.
+            In the future I will overcome this. I will go past you and be okay.
+            While life still make sense It won't hurt.
+          </p>
+          <p>
+            I will be laughing at how fool I was today.
+            How fool I was everyday I had loved you.
+          </p>
+          <p>
+            And just like that, until that day comes, I will be afraid.
+          </p>
+          <p>
+            I will be afraid of seeing you. And just as stupid It sounds, I will also be afraid of not seeing you.
+          </p>
+          <p>
+            I will be afraid of having you close or having you far, to remember you or to forget you.
+          </p>
+          <p>
+            Just now I see the world as a contradiction.
+          </p>
+          <p>
+            Bad news are that I want to kiss you so badly. Start wondering about previous and next lifes. Those things we do and imagine when we want love to be bigger than our own existence.
+          </p>
+          <p>When we don't need to know the meaning for life anymore. When we kiss.</p>
+          <p>
+            And that is a problem I have about you.
+          </p>
+      </div>
+    </div>
+  </body>
 </html>
