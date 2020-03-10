@@ -26,9 +26,9 @@
                 <h2>Ostalari (Huésped)</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 <div class="images">
-                    <img class="arrow prev" src="images/prev.png" alt="">
-                    <img class="arrow next" src="images/next.png" alt="">
-                    <div class="owl-carousel">
+                    <img class="arrow prev" data-id="0" src="images/prev.png" alt="">
+                    <img class="arrow next" data-id="0" src="images/next.png" alt="">
+                    <div class="owl-carousel owl-01">
                       <div> <img src="proyectos/maddi/2.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/3.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/4.jpg" alt=""> </div>
@@ -40,6 +40,37 @@
                       <div> <img src="proyectos/maddi/9.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/10.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/1.jpg" alt=""> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="proyectos hr">
+                <h2>Búsquedas</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="images images-dibu">
+                    <img class="arrow prev" data-id="1" src="images/prev.png" alt="">
+                    <img class="arrow next" data-id="1" src="images/next.png" alt="">
+                    <div class="owl-carousel owl-02">
+                      <div> <img src="proyectos/cobre/4.jpg" alt=""> </div>
+                      <div> <img src="proyectos/cobre/3.jpg" alt=""> </div>
+                      <div> <img src="proyectos/cobre/5.jpg" alt=""> </div>
+                      <div> <img src="proyectos/cobre/6.jpg" alt=""> </div>
+                      <div> <img src="proyectos/cobre/1.jpg" alt=""> </div>
+                      <div> <img src="proyectos/cobre/2.jpg" alt=""> </div>
+                    </div>
+                </div>
+                <div class="images images-dibu">
+                    <img class="arrow prev" data-id="2" src="images/prev.png" alt="">
+                    <img class="arrow next" data-id="2" src="images/next.png" alt="">
+                    <div class="owl-carousel owl-03">
+                      <div> <img src="proyectos/dibujos/1.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/2.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/3.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/4.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/6.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/7.jpg" alt=""> </div>
+                      <div> <img src="proyectos/dibujos/5.jpg" alt=""> </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +95,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-          var owl = $(".owl-carousel").owlCarousel({
+          var owl = new Array(10);
+          owl[0] = $(".owl-01").owlCarousel({
                 center: true,
                 items:1,
                 loop:true,
@@ -76,11 +108,38 @@
                     }
                 }
             });
+
+            owl[1] = $(".owl-02").owlCarousel({
+                  center: true,
+                  items:1,
+                  loop:true,
+                  margin:10,
+                  autoWidth:true,
+                  responsive:{
+                      600:{
+                          items:2
+                      }
+                  }
+              });
+
+              owl[2] = $(".owl-03").owlCarousel({
+                    center: true,
+                    items:1,
+                    loop:true,
+                    margin:10,
+                    autoWidth:true,
+                    responsive:{
+                        600:{
+                            items:2
+                        }
+                    }
+                });
+
             $('.next').click(function() {
-                owl.trigger('next.owl.carousel');
+                owl[$(this).data("id")].trigger('next.owl.carousel');
             })
             $('.prev').click(function() {
-                owl.trigger('prev.owl.carousel');
+                owl[$(this).data("id")].trigger('prev.owl.carousel');
             })
         });
     </script>

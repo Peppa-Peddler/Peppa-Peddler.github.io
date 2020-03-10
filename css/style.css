@@ -78,10 +78,12 @@ img{
     margin-bottom: 0px;
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    height: 180px;
-  }
+.images.images-dibu img{
+    height: 400px;
+}
+
+.images.images-dibu img.arrow{
+    top: 180px;
 }
 
 .images img.arrow{
