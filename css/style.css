@@ -1,0 +1,157 @@
+@font-face {
+  font-family: header;
+  src: url("../fonts/header/header.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: header;
+  src: url("../fonts/header/header-medium.woff2") format("woff2");
+  font-weight: 700;
+}
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'CircularStd', sans-serif;
+    color: #DF3730;
+    background: #EEE7DC;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin: 50px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .videoWrapper {
+        margin: 20px 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    border: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    img{
+        margin-top: 30px;
+    }
+}
+
+.images{
+    margin: 20px 0px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .images{
+        margin: 0px;
+    }
+}
+
+.images img{
+    height: 220px;
+    width: auto !important;
+    border: 1px solid #cccccc;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    height: 180px;
+  }
+}
+
+.images img.arrow{
+    position: absolute;
+    top: 98px;
+    width: 15px !important;
+    height: 15px !important;
+    left: 5px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    padding-left: 9px;
+    padding-right: 11px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.images img.arrow.next{
+    right: 5px;
+    left: auto;
+    padding-left: 11px;
+    padding-right: 9px;
+}
+
+h1{
+    font-family: 'header';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 0.75;
+    margin: 0px 0px;
+    padding: 30px;
+}
+
+h2{
+    font-family: 'header';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+@media only screen and (max-width: 500px) {
+    h2{
+        margin-top: 0px;
+    }
+}
+
+.hr{
+    border-top: 1px dashed #DF3730;
+}
+
+.proyectos{
+    padding: 50px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .proyectos{
+        padding: 50px 0px;
+    }
+}
+
+.owl-item{
+    opacity: 0.5;
+}
+
+.owl-item.center{
+    opacity: 1;
+}
+
+.owl-dots{
+    display: none;
+}
