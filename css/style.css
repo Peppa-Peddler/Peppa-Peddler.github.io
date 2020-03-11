@@ -119,6 +119,10 @@ h1{
     padding: 30px;
 }
 
+h1 small{
+    font-size: 12px;
+}
+
 h2{
     font-family: 'header';
     font-size: 50px;
