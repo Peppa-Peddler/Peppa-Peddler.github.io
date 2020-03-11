@@ -14,6 +14,25 @@
         <div class="cover"></div>
         <div class="container">
             <div class="proyectos">
+                <h2>Ospakizun</h2>
+                2020. <em>Celebración</em>. Autoretrato, rostro de cemento con máscara de papel mache recubierta con gesso y pintura latex. En la última parada, un instante en el que el cuerpo se despide de su identidad evidente. Petrificado y a la vista de todos: contrario a la naturaleza y a la sociedad.
+                <br><br>
+                Parte de mi investigación sobre el cuerpo, las creencias y la identidad: Lo físico, lo espiritual y nuestra autoconsciencia. Pilares que se hacen presentes al confrotar la idea de la muerte.
+                <div class="images images-dibu">
+                    <img class="arrow prev" data-id="3" src="images/prev.png" alt="">
+                    <img class="arrow next" data-id="3" src="images/next.png" alt="">
+                    <div class="owl-carousel owl-04">
+                      <div> <img src="proyectos/muerto/1.jpg" alt=""> </div>
+                       <div> <img src="proyectos/muerto/3.jpg" alt=""> </div>
+                         <div> <img src="proyectos/muerto/2.jpg" alt=""> </div>
+                      <div> <img src="proyectos/muerto/4.jpg" alt=""> </div>
+                    </div>
+                    <small class="centerx">Marco de 56x64cm, cabeza tamaño real.</small>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="proyectos hr">
                 <h2>Aves en Leipzig</h2>
                 <div class="videoWrapper">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/yz2zD2sKFuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,7 +47,7 @@
                     <img class="arrow prev" data-id="0" src="images/prev.png" alt="">
                     <img class="arrow next" data-id="0" src="images/next.png" alt="">
                     <div class="owl-carousel owl-01">
-                       <div> <img src="proyectos/maddi/12.jpg" alt=""> </div>
+                      <div> <img src="proyectos/maddi/12.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/9.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/10.jpg" alt=""> </div>
                       <div> <img src="proyectos/maddi/1.jpg" alt=""> </div>
@@ -57,9 +76,8 @@
                       <div> <img src="proyectos/cobre/5.jpg" alt=""> </div>
                       <div> <img src="proyectos/cobre/6.jpg" alt=""> </div>
                       <div> <img src="proyectos/cobre/1.jpg" alt=""> </div>
-                      <div> <img src="proyectos/cobre/2.jpg" alt=""> </div>
                     </div>
-                    <small class="center">Dibujos en A3 canson, usando lapiz de cobre</small>
+                    <small class="centerx">Dibujos en A3 canson, usando lapiz de cobre</small>
                 </div>
                 <div class="images images-dibu">
                     <img class="arrow prev" data-id="2" src="images/prev.png" alt="">
@@ -73,7 +91,7 @@
                       <div> <img src="proyectos/dibujos/7.jpg" alt=""> </div>
                       <div> <img src="proyectos/dibujos/5.jpg" alt=""> </div>
                     </div>
-                    <small class="center">Dibujos en cortes de cartulina de 320g texturada (20x16cm), usando lapiz negrito semigraso</small>
+                    <small class="centerx">Dibujos en cortes de cartulina de 320g texturada (20x16cm), usando lapiz negrito semigraso</small>
                 </div>
             </div>
         </div>
@@ -87,7 +105,6 @@
         <div class="container">
             <div class="proyectos hr">
                 <h2>Saving intimacy</h2>
-                Ejercicio de tomas de alcancía de porcelana con forma de cerdo, en un intento de contextualizarlo de forma erótica.
                 <img src="proyectos/pig/pig.png" alt="">
             </div>
         </div>
@@ -136,6 +153,19 @@
                         }
                     }
                 });
+
+                owl[3] = $(".owl-04").owlCarousel({
+                      center: true,
+                      items:1,
+                      loop:true,
+                      margin:10,
+                      autoWidth:true,
+                      responsive:{
+                          600:{
+                              items:2
+                          }
+                      }
+                  });
 
             $('.next').click(function() {
                 owl[$(this).data("id")].trigger('next.owl.carousel');
