@@ -54,18 +54,25 @@ body{
 
 a.nombre{
     text-transform: uppercase;
-    color: #777 !important;
+    color: #222 !important;
     text-decoration: none !important;
     border-bottom: 1px solid #777;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .works{
-    margin-top: 120px;
+    margin-top: 30px;
 }
 
 .works a{
     display: block;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
+}
+
+.works a:hover{
+    opacity: 0.7;
 }
 
 .menu .works .work{
@@ -138,7 +145,7 @@ h1{
 }
 
 .wound{
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 100px;
 }
 
